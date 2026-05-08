@@ -1,0 +1,75 @@
+{
+    "nav": {
+        "home": "Home",
+        "blog": "Blog",
+        "cv": "Resume",
+        "masterclass": "Masterclass",
+        "books": "Books",
+        "contact": "Contact"
+    },
+    "hero": {
+        "prompt": "> who is Rosario Moscato?",
+        "name": "Rosario Moscato",
+        "role": "AI Engineer & Educator",
+        "tagline": "Building AI agents that think, plan, and ship autonomously.",
+        "location": "// Italy"
+    },
+    "bio": {
+        "prompt": "> about",
+        "p1": "AI Engineer specializing in <span class='highlight'>autonomous systems</span> and <span class='highlight'>agentic coding</span> workflows. I build AI agents that go beyond chat — systems that plan multi-step tasks, use tools, execute code, and self-correct when things go wrong.",
+        "p2": "My work spans from production agent architectures to open-source tools and starter kits that help other developers build them faster. I've shipped agentic coding frameworks, automation pipelines, and autonomous development workflows.",
+        "p3": "I'm also strongly involved in <span class='highlight'>education</span> as trainer, in events as <span class='highlight'>speaker</span> and in writing <span class='highlight'>tech books</span> and magazines articles about Artificial Intelligence."
+    },
+    "cv": {
+        "prompt": "> experience",
+        "date1": "2024 — Present",
+        "role1": "AI Engineer & Founder",
+        "desc1": "Building autonomous agentic systems and agentic coding workflows. Creating open-source tools for the AI developer community.",
+        "date2": "2022 — 2024",
+        "role2": "Content Creator & Educator",
+        "desc2": "Creating educational content on AI, autonomous agents, and automation. Practical tutorials on Claude Code, n8n, and agentic frameworks.",
+        "date3": "2020 — 2022",
+        "role3": "[Previous role]",
+        "desc3": "[Description of previous role]",
+        "date4": "Education",
+        "role4": "[Degree title]",
+        "desc4": "[University / Institution]"
+    },
+    "masterclass": {
+        "prompt": "> masterclass",
+        "title": "MASTERCLASS: AGENTIC CODING",
+        "desc": "Learn to build autonomous AI systems that plan, execute, and self-correct. From agentic architecture design to production deployment.",
+        "b1": "Multi-agent architectures and design patterns",
+        "b2": "Tool use, planning, and self-correction loops",
+        "b3": "Autonomous development workflows with Claude Code, Cursor, and beyond",
+        "b4": "Production-ready automation pipelines",
+        "cta": "ENROLL NOW"
+    },
+    "books": {
+        "prompt": "> books",
+        "buy": "Buy on Amazon →",
+        "title1": "[Book Title 1]",
+        "desc1": "[Brief description of the first book]",
+        "title2": "[Book Title 2]",
+        "desc2": "[Brief description of the second book]",
+        "title3": "[Book Title 3]",
+        "desc3": "[Brief description of the third book]",
+        "title4": "[Book Title 4]",
+        "desc4": "[Brief description of the fourth book]",
+        "title5": "[Book Title 5]",
+        "desc5": "[Brief description of the fifth book]",
+        "title6": "[Book Title 6]",
+        "desc6": "[Brief description of the sixth book]"
+    },
+    "contact": {
+        "prompt": "> contact",
+        "email_label": "mailto:",
+        "github_label": "github:",
+        "youtube_label": "youtube:",
+        "linkedin_label": "linkedin:",
+        "x_label": "x:"
+    },
+    "footer": {
+        "copy": "© 2026 Rosario Moscato. All rights reserved."
+    }
+}

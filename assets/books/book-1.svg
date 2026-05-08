@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f1629"/>
+      <stop offset="100%" stop-color="#13131d"/>
+    </linearGradient>
+  </defs>
+  <rect width="300" height="450" fill="url(#bg1)" rx="0"/>
+  <line x1="24" y1="40" x2="276" y2="40" stroke="#00ff88" stroke-width="1" opacity="0.15"/>
+  <rect x="24" y="60" width="180" height="14" fill="#1a1a28" rx="2"/>
+  <rect x="24" y="84" width="120" height="10" fill="#1a1a28" rx="2"/>
+  <line x1="24" y1="130" x2="276" y2="130" stroke="#1a1a28" stroke-width="1"/>
+  <rect x="24" y="150" width="252" height="8" fill="#1a1a28" rx="2"/>
+  <rect x="24" y="168" width="220" height="8" fill="#1a1a28" rx="2"/>
+  <rect x="24" y="186" width="240" height="8" fill="#1a1a28" rx="2"/>
+  <rect x="24" y="204" width="180" height="8" fill="#1a1a28" rx="2"/>
+  <text x="150" y="350" text-anchor="middle" fill="#2563EB" font-family="monospace" font-size="10" opacity="0.4">[ TITOLO LIBRO ]</text>
+  <text x="150" y="370" text-anchor="middle" fill="#3a3a4e" font-family="monospace" font-size="9">copertina placeholder</text>
+</svg>
