@@ -5,6 +5,7 @@
         it: {
             nav: {
                 home: "Home",
+                about: "Chi sono",
                 blog: "Blog",
                 cv: "Curriculum",
                 masterclass: "Masterclass",
@@ -16,13 +17,14 @@
                 name: "Rosario Moscato",
                 role: "AI Engineer & Divulgatore",
                 tagline: "Costruisco agenti AI che pensano, pianificano e sviluppano in autonomia.",
-                location: "// Italia"
+                location: "// Italia",
+                cta: "Prenota una consulenza gratuita \u2192"
             },
             bio: {
                 prompt: "> about",
                 p1: "AI Engineer specializzato in <span class='highlight'>sistemi autonomi</span> e <span class='highlight'>agentic coding</span>. Costruisco agenti AI che vanno oltre il chat \u2014 sistemi che pianificano task multi-step, utilizzano strumenti, eseguono codice e si correggono autonomamente quando qualcosa va storto.",
                 p2: "Il mio lavoro spazia da architetture agentiche in produzione a strumenti open source e starter kit che aiutano altri sviluppatori a costruirli pi\u00f9 velocemente. Ho sviluppato framework per agentic coding, pipeline di automazione e workflow di sviluppo autonomo.",
-                p3: "Sono inoltre fortemente impegnato nella <span class='highlight'>formazione</span> come trainer, in eventi come <span class='highlight'>speaker</span> e nella scrittura di <span class='highlight'>libri tecnici</span> e articoli per riviste sull'Intelligenza Artificiale."
+                p3: "Oltre a costruire prodotti, sono attivo come <span class='highlight'>trainer</span> e <span class='highlight'>speaker</span> in eventi e universit\u00e0, e scrivo <span class='highlight'>libri tecnici</span> sull'Intelligenza Artificiale pubblicati da editori internazionali."
             },
             masterclass: {
                 prompt: "> masterclass",
@@ -64,6 +66,7 @@
         en: {
             nav: {
                 home: "Home",
+                about: "About",
                 blog: "Blog",
                 cv: "Resume",
                 masterclass: "Masterclass",
@@ -75,13 +78,14 @@
                 name: "Rosario Moscato",
                 role: "AI Engineer & Author",
                 tagline: "Building AI agents that think, plan, and ship autonomously.",
-                location: "// Italy"
+                location: "// Italy",
+                cta: "Book a free consultancy \u2192"
             },
             bio: {
                 prompt: "> about",
                 p1: "AI Engineer specializing in <span class='highlight'>autonomous systems</span> and <span class='highlight'>agentic coding</span> workflows. I build AI agents that go beyond chat \u2014 systems that plan multi-step tasks, use tools, execute code, and self-correct when things go wrong.",
                 p2: "My work spans from production agent architectures to open-source tools and starter kits that help other developers build them faster. I've shipped agentic coding frameworks, automation pipelines, and autonomous development workflows.",
-                p3: "I'm also strongly involved in <span class='highlight'>education</span> as trainer, in events as <span class='highlight'>speaker</span> and in writing <span class='highlight'>tech books</span> and magazines articles about Artificial Intelligence."
+                p3: "Beyond building products, I'm active as a <span class='highlight'>trainer</span> and <span class='highlight'>speaker</span> at events and universities, and I write <span class='highlight'>technical books</span> on Artificial Intelligence published by international publishers."
             },
             masterclass: {
                 prompt: "> masterclass",
