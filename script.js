@@ -24,7 +24,8 @@
                 prompt: "> about",
                 p1: "AI Engineer specializzato in <span class='highlight'>sistemi autonomi</span> e <span class='highlight'>agentic coding</span>. Costruisco agenti AI che vanno oltre il chat \u2014 sistemi che pianificano task multi-step, utilizzano strumenti, eseguono codice e si correggono autonomamente quando qualcosa va storto.",
                 p2: "Il mio lavoro spazia da architetture agentiche in produzione a strumenti open source e starter kit che aiutano altri sviluppatori a costruirli pi\u00f9 velocemente. Ho sviluppato framework per agentic coding, pipeline di automazione e workflow di sviluppo autonomo.",
-                p3: "Oltre a costruire prodotti, sono attivo come <span class='highlight'>trainer</span> e <span class='highlight'>speaker</span> in eventi e universit\u00e0, e scrivo <span class='highlight'>libri tecnici</span> sull'Intelligenza Artificiale pubblicati da editori internazionali."
+                p3: "Oltre a costruire prodotti, sono attivo come <span class='highlight'>trainer</span> e <span class='highlight'>speaker</span> in eventi e universit\u00e0, e scrivo <span class='highlight'>libri tecnici</span> sull'Intelligenza Artificiale pubblicati da editori internazionali.",
+                p4: "Mi occupo inoltre di <span class='highlight'>etica dell'Intelligenza Artificiale</span> e di <span class='highlight'>neurobioetica</span>, esplorando le implicazioni che i sistemi autonomi e le tecnologie cognitive hanno sull'essere umano e sulla societ\u00e0."
             },
             masterclass: {
                 prompt: "> masterclass",
@@ -85,7 +86,8 @@
                 prompt: "> about",
                 p1: "AI Engineer specializing in <span class='highlight'>autonomous systems</span> and <span class='highlight'>agentic coding</span> workflows. I build AI agents that go beyond chat \u2014 systems that plan multi-step tasks, use tools, execute code, and self-correct when things go wrong.",
                 p2: "My work spans from production agent architectures to open-source tools and starter kits that help other developers build them faster. I've shipped agentic coding frameworks, automation pipelines, and autonomous development workflows.",
-                p3: "Beyond building products, I'm active as a <span class='highlight'>trainer</span> and <span class='highlight'>speaker</span> at events and universities, and I write <span class='highlight'>technical books</span> on Artificial Intelligence published by international publishers."
+                p3: "Beyond building products, I'm active as a <span class='highlight'>trainer</span> and <span class='highlight'>speaker</span> at events and universities, and I write <span class='highlight'>technical books</span> on Artificial Intelligence published by international publishers.",
+                p4: "I also work on <span class='highlight'>AI ethics</span> and <span class='highlight'>neurobioethics</span>, exploring the implications that autonomous systems and cognitive technologies have on human beings and society."
             },
             masterclass: {
                 prompt: "> masterclass",
