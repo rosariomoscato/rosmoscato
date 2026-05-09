@@ -24,21 +24,6 @@
                 p2: "Il mio lavoro spazia da architetture agentiche in produzione a strumenti open source e starter kit che aiutano altri sviluppatori a costruirli pi\u00f9 velocemente. Ho sviluppato framework per agentic coding, pipeline di automazione e workflow di sviluppo autonomo.",
                 p3: "Sono inoltre fortemente impegnato nella <span class='highlight'>formazione</span> come trainer, in eventi come <span class='highlight'>speaker</span> e nella scrittura di <span class='highlight'>libri tecnici</span> e articoli per riviste sull'Intelligenza Artificiale."
             },
-            cv: {
-                prompt: "> experience",
-                date1: "Lug 2026 \u2014 Presente",
-                role1: "Chief AI Officer",
-                desc1: "Like Digital \u00b7 Roma",
-                date2: "Nov 2024 \u2014 Presente",
-                role2: "Presidente",
-                desc2: "MediterranIA \u00b7 Roma",
-                date3: "Set 2023 \u2014 Presente",
-                role3: "Coordinatore \u2014 Neurobioetica e IA",
-                desc3: "Neurobioethics Group \u00b7 Ateneo Pontificio Regina Apostolorum",
-                date4: "Giu 2024 \u2014 Presente",
-                role4: "Autore Sezione AI",
-                desc4: "Dire News Oggi \u00b7 Roma"
-            },
             masterclass: {
                 prompt: "> masterclass",
                 title: "MASTERCLASS: AGENTIC CODING",
@@ -88,7 +73,7 @@
             hero: {
                 prompt: "> who is Rosario Moscato?",
                 name: "Rosario Moscato",
-                role: "AI Engineer & Educator",
+                role: "AI Engineer & Author",
                 tagline: "Building AI agents that think, plan, and ship autonomously.",
                 location: "// Italy"
             },
@@ -97,21 +82,6 @@
                 p1: "AI Engineer specializing in <span class='highlight'>autonomous systems</span> and <span class='highlight'>agentic coding</span> workflows. I build AI agents that go beyond chat \u2014 systems that plan multi-step tasks, use tools, execute code, and self-correct when things go wrong.",
                 p2: "My work spans from production agent architectures to open-source tools and starter kits that help other developers build them faster. I've shipped agentic coding frameworks, automation pipelines, and autonomous development workflows.",
                 p3: "I'm also strongly involved in <span class='highlight'>education</span> as trainer, in events as <span class='highlight'>speaker</span> and in writing <span class='highlight'>tech books</span> and magazines articles about Artificial Intelligence."
-            },
-            cv: {
-                prompt: "> experience",
-                date1: "Jul 2026 \u2014 Present",
-                role1: "Chief AI Officer",
-                desc1: "Like Digital \u00b7 Roma",
-                date2: "Nov 2024 \u2014 Present",
-                role2: "President",
-                desc2: "MediterranIA \u00b7 Roma",
-                date3: "Sep 2023 \u2014 Present",
-                role3: "Coordinator \u2014 Neurobioethics & AI",
-                desc3: "Neurobioethics Group \u00b7 Ateneo Pontificio Regina Apostolorum",
-                date4: "Jun 2024 \u2014 Present",
-                role4: "AI Section Author",
-                desc4: "Dire News Oggi \u00b7 Roma"
             },
             masterclass: {
                 prompt: "> masterclass",
