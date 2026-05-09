@@ -66,7 +66,7 @@
             contact: {
                 prompt: "> contact",
                 consultancy_label: "consulenza:",
-                consultancy_value: "Clicca qui per prenotare una consulenza gratuita",
+                consultancy_value: "clicca qui per prenotare una consulenza gratuita",
                 email_label: "mailto:",
                 github_label: "github:",
                 linkedin_label: "linkedin:",
@@ -140,7 +140,7 @@
             contact: {
                 prompt: "> contact",
                 consultancy_label: "consultancy:",
-                consultancy_value: "Click here to book a free consultancy",
+                consultancy_value: "click here to book a free consultancy",
                 email_label: "mailto:",
                 github_label: "github:",
                 linkedin_label: "linkedin:",
