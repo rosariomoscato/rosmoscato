@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500&family=Space+Grotesk:wght@400;500;700&display=swap');
-
 :root {
     --bg-primary: #0a0a0f;
     --bg-surface: #0e0e16;
@@ -923,7 +921,20 @@ ul {
 }
 
 @media (max-width: 768px) {
-    :root {
+:root {
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+:root {
         --header-height: 56px;
     }
 
