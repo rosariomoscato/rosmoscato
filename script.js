@@ -9,6 +9,7 @@
                 blog: "Blog",
                 cv: "Curriculum",
                 masterclass: "Masterclass",
+                projects: "Progetti",
                 books: "Libri",
                 contact: "Contatti"
             },
@@ -51,6 +52,16 @@
                 title5: "Natural Language Processing Cookbook",
                 desc5: "Soluzioni pratiche passo-passo per sbloccare il potenziale dell'NLP."
             },
+            projects: {
+                prompt: "> projects",
+                title: "I miei progetti",
+                subtitle: "Strumenti open source che costruisco per la community di sviluppatori AI.",
+                turbodev_desc: "AI coding agent moderno da terminale, ottimizzato per consumare pochissimi token a livello di sistema. Chatta con modelli LLM, esegui strumenti, gestisci file e codice senza mai lasciare la CLI.",
+                "2ndbrain_desc": "Applicazione multiutente per la gestione delle knowledge base aziendali. Graph interattivo, ricerca semantica AI, supporto PDF e markdown, embeddings vettoriali e molto altro.",
+                mysecondbrain_desc: "Tool personale per esplorare, cercare e interrogare le proprie note markdown con l'IA. Grafo interattivo, ricerca full-text e Q&A AI con citazioni delle fonti.",
+                view_github: "Vedi su GitHub",
+                view_docs: "Documentazione"
+            },
             contact: {
                 prompt: "> contact",
                 consultancy_label: "consulenza:",
@@ -71,6 +82,7 @@
                 blog: "Blog",
                 cv: "Resume",
                 masterclass: "Masterclass",
+                projects: "Projects",
                 books: "Books",
                 contact: "Contact"
             },
@@ -112,6 +124,16 @@
                 desc4: "Automate AI workflows and fast-track your machine learning tasks with ChatGPT, Google Colab, and Python.",
                 title5: "Natural Language Processing Cookbook",
                 desc5: "Step-by-step practical solution for unlocking the power of natural language processing potential."
+            },
+            projects: {
+                prompt: "> projects",
+                title: "My Projects",
+                subtitle: "Open source tools I build for the AI developer community.",
+                turbodev_desc: "Modern terminal-based AI coding agent, optimized to consume very few system-level tokens. Chat with LLM models, execute tools, manage files and code without leaving the CLI.",
+                "2ndbrain_desc": "Multi-user application for managing corporate knowledge bases. Interactive graph, AI semantic search, PDF and markdown support, vector embeddings, and much more.",
+                mysecondbrain_desc: "Personal tool to explore, search, and query your markdown notes with AI. Interactive graph, full-text search, and AI Q&A with source citations.",
+                view_github: "View on GitHub",
+                view_docs: "Documentation"
             },
             contact: {
                 prompt: "> contact",

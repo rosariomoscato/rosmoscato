@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progetti — Rosario Moscato | AI Engineer</title>
+    <meta name="description" content="Progetti open source di Rosario Moscato — AI coding agent, knowledge graph, personal knowledge management.">
+    <meta name="author" content="Rosario Moscato">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rosmoscato.xyz/progetti.html">
+    <meta property="og:title" content="Progetti — Rosario Moscato">
+    <meta property="og:description" content="Progetti open source di Rosario Moscato — AI coding agent, knowledge graph, personal knowledge management.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://rosmoscato.xyz/assets/profile-pic-bw.jpg">
+    <meta property="og:url" content="https://rosmoscato.xyz/progetti.html">
+    <meta property="og:site_name" content="Rosario Moscato">
+    <meta property="og:locale" content="it_IT">
+    <meta name="theme-color" content="#0a0a0f">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500&family=Space+Grotesk:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500&family=Space+Grotesk:wght@400;500;700&display=swap">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0a0f'/><text x='5' y='23' font-family='monospace' font-size='18' fill='%2300ff88' font-weight='bold'>&gt;_</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ═══════════════════ HEADER ═══════════════════ -->
+    <header class="site-header" id="site-header">
+        <div class="container header-inner">
+            <div class="header-left">
+                <span class="terminal-prompt">rosario@ai-engine</span>
+                <span class="terminal-cursor" aria-hidden="true">█</span>
+            </div>
+            <div class="header-center">
+                <span class="neural-badge">
+                    <span class="neural-dot"></span>
+                    <span class="neural-text">NEURAL ENGINE: ACTIVE</span>
+                </span>
+            </div>
+            <div class="header-right">
+                <nav class="main-nav" id="main-nav">
+                    <a href="index.html" data-i18n="nav.home">Home</a>
+                    <a href="index.html#about" data-i18n="nav.about">Chi sono</a>
+                    <a href="index.html#masterclass" class="nav-cta" data-i18n="nav.masterclass">Masterclass</a>
+                    <a href="progetti.html" class="nav-active" data-i18n="nav.projects">Progetti</a>
+                    <a href="index.html#books" data-i18n="nav.books">Libri</a>
+                    <a href="https://blog.rosmoscato.xyz/" target="_blank" rel="noopener noreferrer" data-i18n="nav.blog">Blog</a>
+                    <a href="cv_rosario.html" data-i18n="nav.cv">Curriculum</a>
+                    <a href="index.html#contact" data-i18n="nav.contact">Contatti</a>
+                </nav>
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="it">IT</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══════════════════ MOBILE MENU ═══════════════════ -->
+    <div class="mobile-menu" id="mobile-menu">
+        <nav class="mobile-nav">
+            <a href="index.html" data-i18n="nav.home">Home</a>
+            <a href="index.html#about" data-i18n="nav.about">Chi sono</a>
+            <a href="index.html#masterclass" data-i18n="nav.masterclass">Masterclass</a>
+            <a href="progetti.html" data-i18n="nav.projects">Progetti</a>
+            <a href="index.html#books" data-i18n="nav.books">Libri</a>
+            <a href="https://blog.rosmoscato.xyz/" target="_blank" rel="noopener noreferrer" data-i18n="nav.blog">Blog</a>
+            <a href="cv_rosario.html" data-i18n="nav.cv">Curriculum</a>
+            <a href="index.html#contact" data-i18n="nav.contact">Contatti</a>
+        </nav>
+        <div class="mobile-lang">
+            <button class="lang-btn active" data-lang="it">IT</button>
+            <span>|</span>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+    </div>
+
+    <main>
+        <!-- ═══════════════════ PROJECTS ═══════════════════ -->
+        <section id="projects" class="section projects-page reveal">
+            <div class="container">
+                <span class="section-prompt" data-i18n="projects.prompt">&gt; projects</span>
+                <h1 class="projects-page-title" data-i18n="projects.title">I miei progetti</h1>
+                <p class="projects-page-subtitle" data-i18n="projects.subtitle">Strumenti open source che costruisco per la community di sviluppatori AI.</p>
+
+                <div class="projects-grid">
+
+                    <div class="project-card">
+                        <div class="project-screenshot">
+                            <a href="https://github.com/rosariomoscato/TurboDev" target="_blank" rel="noopener noreferrer">
+                                <img src="https://raw.githubusercontent.com/rosariomoscato/TurboDev/master/assets/TurboDev2.png" alt="TurboDev — Terminal-based AI Coding Agent" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">TypeScript</span>
+                                <span class="project-tag">React + Ink</span>
+                                <span class="project-tag">CLI</span>
+                            </div>
+                            <h2 class="project-title">TurboDev</h2>
+                            <p class="project-desc" data-i18n="projects.turbodev_desc">AI coding agent moderno da terminale, ottimizzato per consumare pochissimi token a livello di sistema. Chatta con modelli LLM, esegui strumenti, gestisci file e codice senza mai lasciare la CLI.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/rosariomoscato/TurboDev" target="_blank" rel="noopener noreferrer" class="project-link project-link--github">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                    <span data-i18n="projects.view_github">Vedi su GitHub</span>
+                                </a>
+                                <a href="https://rosmoscato.xyz/turbodev/" target="_blank" rel="noopener noreferrer" class="project-link project-link--docs">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                                    <span data-i18n="projects.view_docs">Documentazione</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-screenshot">
+                            <a href="https://github.com/rosariomoscato/2ndBrain" target="_blank" rel="noopener noreferrer">
+                                <img src="https://raw.githubusercontent.com/rosariomoscato/2ndBrain/main/dashboard-screenshot.png" alt="2ndBrain — Personal Knowledge Management" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Next.js</span>
+                                <span class="project-tag">PostgreSQL</span>
+                                <span class="project-tag">pgvector</span>
+                            </div>
+                            <h2 class="project-title">2ndBrain</h2>
+                            <p class="project-desc" data-i18n="projects.2ndbrain_desc">Applicazione multiutente per la gestione delle knowledge base aziendali. Graph interattivo, ricerca semantica AI, supporto PDF e markdown, embeddings vettoriali e molto altro.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/rosariomoscato/2ndBrain" target="_blank" rel="noopener noreferrer" class="project-link project-link--github">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                    <span data-i18n="projects.view_github">Vedi su GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-screenshot">
+                            <a href="https://github.com/rosariomoscato/MySecondBrain" target="_blank" rel="noopener noreferrer">
+                                <img src="https://raw.githubusercontent.com/rosariomoscato/MySecondBrain/main/public/screenshots/graph.png" alt="MySecondBrain — Knowledge Graph & AI Search" loading="lazy">
+                            </a>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-tags">
+                                <span class="project-tag">Next.js</span>
+                                <span class="project-tag">vis-network</span>
+                                <span class="project-tag">Vercel AI SDK</span>
+                            </div>
+                            <h2 class="project-title">MySecondBrain</h2>
+                            <p class="project-desc" data-i18n="projects.mysecondbrain_desc">Tool personale per esplorare, cercare e interrogare le proprie note markdown con l'IA. Grafo interattivo, ricerca full-text e Q&A AI con citazioni delle fonti.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/rosariomoscato/MySecondBrain" target="_blank" rel="noopener noreferrer" class="project-link project-link--github">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                    <span data-i18n="projects.view_github">Vedi su GitHub</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-copy" data-i18n="footer.copy">&copy; 2026 Rosario Moscato. Tutti i diritti riservati.</p>
+            <div class="footer-social">
+                <a href="https://github.com/rosariomoscato" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/rosariomoscato/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="https://www.amazon.it/stores/author/B0CSBQQH5S/allbooks?_encoding=UTF8&ref_=aufs_ap_ahdr_dsk_ab" target="_blank" rel="noopener noreferrer" aria-label="Amazon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
