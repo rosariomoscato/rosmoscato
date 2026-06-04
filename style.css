@@ -656,6 +656,12 @@ ul {
     transform: translateY(-1px);
 }
 
+.cta-disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 /* ═══════════════════════════════════════════
    BOOKS
    ═══════════════════════════════════════════ */
