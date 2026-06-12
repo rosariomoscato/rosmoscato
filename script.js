@@ -58,7 +58,7 @@
                 subtitle: "Strumenti open source che costruisco per la community di sviluppatori AI.",
                 turbodev_desc: "AI coding agent moderno da terminale, ottimizzato per consumare pochissimi token a livello di sistema. Chatta con modelli LLM, esegui strumenti, gestisci file e codice senza mai lasciare la CLI.",
                 "2ndbrain_desc": "Applicazione multiutente per la gestione delle knowledge base aziendali. Graph interattivo, ricerca semantica AI, supporto PDF e markdown, embeddings vettoriali e molto altro.",
-                mysecondbrain_desc: "Tool personale per esplorare, cercare e interrogare le proprie note markdown con l'IA. Grafo interattivo, ricerca full-text e Q&A AI con citazioni delle fonti.",
+                mysecondbrain_desc: "Tool personale per esplorare, cercare e interrogare le tue note markdown con l'IA. Grafo interattivo con drag & drop e nodi per link esterni, ricerca semantica per significato, Q&A AI con citazioni delle fonti, editing inline delle note, preferiti e modalità offline/PWA.",
                 view_github: "Vedi su GitHub",
                 view_docs: "Documentazione"
             },
@@ -131,7 +131,7 @@
                 subtitle: "Open source tools I build for the AI developer community.",
                 turbodev_desc: "Modern terminal-based AI coding agent, optimized to consume very few system-level tokens. Chat with LLM models, execute tools, manage files and code without leaving the CLI.",
                 "2ndbrain_desc": "Multi-user application for managing corporate knowledge bases. Interactive graph, AI semantic search, PDF and markdown support, vector embeddings, and much more.",
-                mysecondbrain_desc: "Personal tool to explore, search, and query your markdown notes with AI. Interactive graph, full-text search, and AI Q&A with source citations.",
+                mysecondbrain_desc: "Personal tool to explore, search, and query your markdown notes with AI. Interactive graph with drag & drop and external links nodes, semantic search for meaning, AI Q&A with source citations, inline note editing, bookmarks/favorites, and offline PWA mode.",
                 view_github: "View on GitHub",
                 view_docs: "Documentation"
             },
