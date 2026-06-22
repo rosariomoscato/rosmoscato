@@ -59,6 +59,7 @@
                 turbodev_desc: "AI coding agent da terminale con streaming in tempo reale. Sistema multi-agente con switch istantaneo, 10 strumenti integrati, integrazione Git/GitHub completa, permessi granulari, gestione contesto window, tracciamento costi e persistenza sessioni.",
                 "2ndbrain_desc": "Applicazione multiutente per la gestione delle knowledge base aziendali. Graph interattivo, ricerca semantica AI, supporto PDF e markdown, embeddings vettoriali e molto altro.",
                 mysecondbrain_desc: "Tool personale per esplorare, cercare e interrogare le tue note markdown con l'IA. Grafo interattivo con drag & drop e nodi per link esterni, ricerca semantica per significato, Q&A AI con citazioni delle fonti, editing inline delle note, preferiti e modalità offline/PWA.",
+                webwizard_desc: "Piattaforma self-hostata per audit automatico di siti web, analisi SEO e monitoraggio della reputazione del brand. Scansioni pianificate di portali di siti, scoring, raccomandazioni AI prioritarie, esportazione CSV/Excel/PDF e scansione anche dietro login.",
                 view_github: "Vedi su GitHub",
                 view_docs: "Documentazione"
             },
@@ -132,6 +133,7 @@
                 turbodev_desc: "Terminal-based AI coding agent with real-time streaming. Multi-agent system with instant switching, 10 built-in tools, full Git/GitHub integration, granular permissions, context window management, cost tracking, and session persistence.",
                 "2ndbrain_desc": "Multi-user application for managing corporate knowledge bases. Interactive graph, AI semantic search, PDF and markdown support, vector embeddings, and much more.",
                 mysecondbrain_desc: "Personal tool to explore, search, and query your markdown notes with AI. Interactive graph with drag & drop and external links nodes, semantic search for meaning, AI Q&A with source citations, inline note editing, bookmarks/favorites, and offline PWA mode.",
+                webwizard_desc: "Self-hosted platform for automated website auditing, SEO analysis, and brand reputation monitoring. Scheduled scanning of site portfolios, scoring, prioritized AI recommendations, CSV/Excel/PDF export, and behind-login scanning.",
                 view_github: "View on GitHub",
                 view_docs: "Documentation"
             },
