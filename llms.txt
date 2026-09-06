@@ -1,0 +1,21 @@
+# Rosario Moscato
+
+> AI Engineer, autore e speaker specializzato in sistemi autonomi, agentic coding, etica dell'Intelligenza Artificiale e neurobioetica.
+
+## Pagine
+
+- [Home](https://rosmoscato.xyz/): Homepage — chi è Rosario Moscato, metodologia Lights-Out, libri e contatti
+- [Progetti](https://rosmoscato.xyz/progetti.html): Progetti open source — TurboDev, 2ndBrain, MySecondBrain, WebWizard
+- [Curriculum](https://rosmoscato.xyz/cv_rosario.html): Curriculum vitae — carriera, pubblicazioni e talk
+
+## Contenuti
+
+- [Blog — Oltre l'Algoritmo](https://blog.rosmoscato.xyz/): Articoli su AI, agenti autonomi e cultura digitale
+- [La "Fabbrica al Buio" del Software](https://blog.rosmoscato.xyz/la-fabbrica-al-buio-del-software/): La metodologia Lights-Out Software Development (Start → Review → Deploy)
+- [Documentazione TurboDev](https://rosmoscato.xyz/turbodev/): Guida completa al coding agent da terminale (IT/EN)
+
+## Altro
+
+- [GitHub](https://github.com/rosariomoscato): Repository open source
+- [LinkedIn](https://www.linkedin.com/in/rosariomoscato/): Profilo professionale
+- [Libri su Amazon](https://www.amazon.it/stores/author/B0CSBQQH5S/allbooks): Pubblicazioni tecnico-divulgative
