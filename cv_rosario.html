@@ -48,12 +48,11 @@ address {
   --bg-card-hover: #18182a;
   --text-primary: #d4d4d8;
   --text-heading: #f4f4f5;
-  --text-dim: #5a5a6e;
-  --text-dimmer: #3a3a4e;
+  --text-dim: #8e8ea0;
+  --text-dimmer: #66667a;
   --accent-green: #00ff88;
   --accent-blue: #2563EB;
   --accent-blue-hover: #3b82f6;
-  --accent-amber: #ffb800;
   --border: #1a1a28;
   --border-light: #22223a;
   --font-display: 'Space Grotesk', sans-serif;
@@ -109,6 +108,7 @@ a:hover { color: var(--accent-blue-hover); }
   font-size: 12px;
   color: var(--accent-green);
   margin-bottom: 12px;
+  text-shadow: 0 0 14px rgba(0, 255, 136, 0.35);
 }
 
 h1 {
@@ -198,6 +198,11 @@ h2.section-label {
   margin-bottom: 24px;
   padding-bottom: 24px;
   border-bottom: 1px solid var(--border);
+  transition: border-color 0.25s ease;
+}
+
+.entry:hover {
+  border-bottom-color: var(--border-light);
 }
 
 .entry:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
@@ -250,6 +255,12 @@ h2.section-label {
   border-left: 2px solid var(--accent-green);
   margin-bottom: 10px;
   border-radius: 0 6px 6px 0;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.book-item:hover {
+  background: var(--bg-card-hover);
+  transform: translateX(3px);
 }
 
 .book-title { font-family: var(--font-display); font-size: 14px; color: var(--text-heading); line-height: 1.4; }
