@@ -8,7 +8,7 @@
                 about: "Chi sono",
                 blog: "Blog",
                 cv: "Curriculum",
-                masterclass: "Masterclass",
+                lightsout: "Lights-Out",
                 projects: "Progetti",
                 books: "Libri",
                 contact: "Contatti"
@@ -28,15 +28,15 @@
                 p3: "Oltre a costruire prodotti, sono attivo come <span class='highlight'>trainer</span> e <span class='highlight'>speaker</span> in eventi e universit\u00e0, e scrivo <span class='highlight'>libri tecnici</span> sull'Intelligenza Artificiale pubblicati da editori internazionali.",
                 p4: "Mi occupo inoltre di <span class='highlight'>etica dell'Intelligenza Artificiale</span> e di <span class='highlight'>neurobioetica</span>, esplorando le implicazioni che i sistemi autonomi e le tecnologie cognitive hanno sull'essere umano e sulla societ\u00e0."
             },
-            masterclass: {
-                prompt: "> masterclass",
-                title: "MASTERCLASS: AGENTIC CODING",
-                desc: "Impara a costruire sistemi AI autonomi che pianificano, eseguono e si correggono da soli. Dalla progettazione di architetture agentiche al deployment in produzione.",
-                b1: "Architetture multi-agente e pattern di progettazione",
-                b2: "Tool use, planning e self-correction loops",
-                b3: "Workflow di sviluppo autonomo con Claude Code, Cursor e oltre",
-                b4: "Pipeline di automazione production-ready",
-                cta: "ISCRIVITI ORA"
+            lightsout: {
+                prompt: "> lights-out",
+                title: "LIGHTS-OUT SOFTWARE DEVELOPMENT",
+                desc: "La \u201cfabbrica al buio\u201d del software: agenti AI cooperanti che progettano, revisionano e rilasciano applicazioni complete in autonomia. L'intervento umano si riduce a una conversazione.",
+                b1: "Start \u2014 progettazione intelligente da conversazione in linguaggio naturale",
+                b2: "Review \u2014 controllo qualit\u00e0 e sicurezza secondo OWASP Top 10",
+                b3: "Deploy \u2014 rilascio automatico su cloud con migrazione dati e CI/CD",
+                b4: "Server MCP nativo: applicazioni pronte a interagire con altre AI",
+                cta: "PRENOTA UNA CONSULENZA GRATUITA"
             },
             books: {
                 prompt: "> books",
@@ -82,7 +82,7 @@
                 about: "About",
                 blog: "Blog",
                 cv: "Resume",
-                masterclass: "Masterclass",
+                lightsout: "Lights-Out",
                 projects: "Projects",
                 books: "Books",
                 contact: "Contact"
@@ -102,15 +102,15 @@
                 p3: "Beyond building products, I'm active as a <span class='highlight'>trainer</span> and <span class='highlight'>speaker</span> at events and universities, and I write <span class='highlight'>technical books</span> on Artificial Intelligence published by international publishers.",
                 p4: "I also work on <span class='highlight'>AI ethics</span> and <span class='highlight'>neurobioethics</span>, exploring the implications that autonomous systems and cognitive technologies have on human beings and society."
             },
-            masterclass: {
-                prompt: "> masterclass",
-                title: "MASTERCLASS: AGENTIC CODING",
-                desc: "Learn to build autonomous AI systems that plan, execute, and self-correct. From agentic architecture design to production deployment.",
-                b1: "Multi-agent architectures and design patterns",
-                b2: "Tool use, planning, and self-correction loops",
-                b3: "Autonomous development workflows with Claude Code, Cursor, and beyond",
-                b4: "Production-ready automation pipelines",
-                cta: "ENROLL NOW"
+            lightsout: {
+                prompt: "> lights-out",
+                title: "LIGHTS-OUT SOFTWARE DEVELOPMENT",
+                desc: "The software \u201cdark factory\u201d: cooperating AI agents that design, review, and ship complete applications autonomously. Human intervention is reduced to a conversation.",
+                b1: "Start \u2014 intelligent design from a natural-language conversation",
+                b2: "Review \u2014 quality control and security based on OWASP Top 10",
+                b3: "Deploy \u2014 automated cloud release with data migration and CI/CD",
+                b4: "Native MCP server: applications ready to interact with other AIs",
+                cta: "BOOK A FREE CONSULTANCY"
             },
             books: {
                 prompt: "> books",

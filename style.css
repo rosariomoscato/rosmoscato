@@ -575,10 +575,10 @@ ul {
 }
 
 /* ═══════════════════════════════════════════
-   MASTERCLASS
+   LIGHTS-OUT
    ═══════════════════════════════════════════ */
 
-.masterclass-card {
+.lightsout-card {
     max-width: 720px;
     background: var(--bg-card);
     border-left: 3px solid var(--accent-green);
@@ -588,7 +588,7 @@ ul {
     overflow: hidden;
 }
 
-.masterclass-card::before {
+.lightsout-card::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -596,7 +596,7 @@ ul {
     pointer-events: none;
 }
 
-.masterclass-title {
+.lightsout-title {
     font-family: var(--font-display);
     font-size: 28px;
     font-weight: 700;
@@ -605,7 +605,7 @@ ul {
     position: relative;
 }
 
-.masterclass-desc {
+.lightsout-desc {
     font-size: 18px;
     line-height: 1.7;
     color: var(--text-primary);
@@ -613,12 +613,12 @@ ul {
     position: relative;
 }
 
-.masterclass-benefits {
+.lightsout-benefits {
     margin-top: 24px;
     position: relative;
 }
 
-.masterclass-benefits li {
+.lightsout-benefits li {
     font-size: 16px;
     color: var(--text-primary);
     padding: 6px 0;
@@ -626,7 +626,7 @@ ul {
     position: relative;
 }
 
-.masterclass-benefits li::before {
+.lightsout-benefits li::before {
     content: '✓';
     position: absolute;
     left: 0;
@@ -1138,11 +1138,11 @@ ul {
         margin-bottom: 32px;
     }
 
-    .masterclass-card {
+    .lightsout-card {
         padding: 32px 24px;
     }
 
-    .masterclass-title {
+    .lightsout-title {
         font-size: 22px;
     }
 

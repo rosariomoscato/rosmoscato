@@ -3,7 +3,7 @@
         "home": "Home",
         "blog": "Blog",
         "cv": "Curriculum",
-        "masterclass": "Masterclass",
+        "lightsout": "Lights-Out",
         "projects": "Progetti",
         "books": "Libri",
         "contact": "Contatti"
@@ -36,15 +36,15 @@
         "role4": "[Titolo di studio]",
         "desc4": "[Università / Istituto]"
     },
-    "masterclass": {
-        "prompt": "> masterclass",
-        "title": "MASTERCLASS: AGENTIC CODING",
-        "desc": "Impara a costruire sistemi AI autonomi che pianificano, eseguono e si correggono da soli. Dalla progettazione di architetture agentiche al deployment in produzione.",
-        "b1": "Architetture multi-agente e pattern di progettazione",
-        "b2": "Tool use, planning e self-correction loops",
-        "b3": "Workflow di sviluppo autonomo con Claude Code, Cursor e oltre",
-        "b4": "Pipeline di automazione production-ready",
-        "cta": "ISCRIVITI ORA"
+    "lightsout": {
+        "prompt": "> lights-out",
+        "title": "LIGHTS-OUT SOFTWARE DEVELOPMENT",
+        "desc": "La “fabbrica al buio” del software: agenti AI cooperanti che progettano, revisionano e rilasciano applicazioni complete in autonomia. L'intervento umano si riduce a una conversazione.",
+        "b1": "Start — progettazione intelligente da conversazione in linguaggio naturale",
+        "b2": "Review — controllo qualità e sicurezza secondo OWASP Top 10",
+        "b3": "Deploy — rilascio automatico su cloud con migrazione dati e CI/CD",
+        "b4": "Server MCP nativo: applicazioni pronte a interagire con altre AI",
+        "cta": "PRENOTA UNA CONSULENZA GRATUITA"
     },
     "books": {
         "prompt": "> books",
