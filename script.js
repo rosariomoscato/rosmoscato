@@ -36,7 +36,7 @@
                 b2: "Review \u2014 controllo qualit\u00e0 e sicurezza secondo OWASP Top 10",
                 b3: "Deploy \u2014 rilascio automatico su cloud con migrazione dati e CI/CD",
                 b4: "Server MCP nativo: applicazioni pronte a interagire con altre AI",
-                cta: "PRENOTA UNA CONSULENZA GRATUITA"
+                cta: "LEGGI L'ARTICOLO \u2192"
             },
             books: {
                 prompt: "> books",
@@ -110,7 +110,7 @@
                 b2: "Review \u2014 quality control and security based on OWASP Top 10",
                 b3: "Deploy \u2014 automated cloud release with data migration and CI/CD",
                 b4: "Native MCP server: applications ready to interact with other AIs",
-                cta: "BOOK A FREE CONSULTANCY"
+                cta: "READ THE ARTICLE \u2192"
             },
             books: {
                 prompt: "> books",

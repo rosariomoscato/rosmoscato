@@ -44,7 +44,7 @@
         "b2": "Review — quality control and security based on OWASP Top 10",
         "b3": "Deploy — automated cloud release with data migration and CI/CD",
         "b4": "Native MCP server: applications ready to interact with other AIs",
-        "cta": "BOOK A FREE CONSULTANCY"
+        "cta": "READ THE ARTICLE →"
     },
     "books": {
         "prompt": "> books",
