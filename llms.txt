@@ -13,6 +13,8 @@
 - [Blog — Oltre l'Algoritmo](https://blog.rosmoscato.xyz/): Articoli su AI, agenti autonomi e cultura digitale
 - [La "Fabbrica al Buio" del Software](https://blog.rosmoscato.xyz/la-fabbrica-al-buio-del-software/): La metodologia Lights-Out Software Development (Start → Review → Deploy)
 - [Documentazione TurboDev](https://rosmoscato.xyz/turbodev/): Guida completa al coding agent da terminale (IT/EN)
+- [Documentazione TurboDev — Italiano](https://rosmoscato.xyz/turbodev/it/): Guida completa al coding agent da terminale in italiano
+- [TurboDev Docs — English](https://rosmoscato.xyz/turbodev/en/): Full guide to the terminal-based coding agent in English
 
 ## Altro
 
