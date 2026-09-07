@@ -52,6 +52,10 @@
                 title5: "Natural Language Processing Cookbook",
                 desc5: "Soluzioni pratiche passo-passo per sbloccare il potenziale dell'NLP."
             },
+            blog: {
+                label: "DAL BLOG",
+                more: "Blog \u2192"
+            },
             projects: {
                 prompt: "> projects",
                 title: "I miei progetti",
@@ -125,6 +129,10 @@
                 desc4: "Automate AI workflows and fast-track your machine learning tasks with ChatGPT, Google Colab, and Python.",
                 title5: "Natural Language Processing Cookbook",
                 desc5: "Step-by-step practical solution for unlocking the power of natural language processing potential."
+            },
+            blog: {
+                label: "FROM THE BLOG",
+                more: "Blog \u2192"
             },
             projects: {
                 prompt: "> projects",
@@ -305,12 +313,28 @@
         }, { passive: true });
     }
 
+    function initBlogChip() {
+        var link = document.getElementById('blog-chip-link');
+        if (!link) return;
+
+        fetch('/blog-latest.json', { cache: 'no-cache' })
+            .then(function (res) { return res.ok ? res.json() : null; })
+            .then(function (data) {
+                if (!data || !data.title || !data.url) return;
+                if (!/^https:\/\/blog\.rosmoscato\.xyz\//.test(data.url)) return;
+                link.textContent = data.title;
+                link.href = data.url;
+            })
+            .catch(function () { /* fallback statico gi\u00e0 nel markup */ });
+    }
+
     function init() {
         initLangSwitcher();
         initMobileMenu();
         initScrollReveal();
         initSmoothScroll();
         initHeaderScroll();
+        initBlogChip();
         loadLanguage(currentLang);
     }
 

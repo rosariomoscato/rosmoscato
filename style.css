@@ -457,6 +457,78 @@ ul {
 }
 
 /* ═══════════════════════════════════════════
+   BLOG CHIP
+   ═══════════════════════════════════════════ */
+
+.blog-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
+    padding: 7px 14px 7px 12px;
+    border: 1px solid rgba(0, 255, 136, 0.18);
+    border-radius: 999px;
+    background: rgba(0, 255, 136, 0.04);
+    margin-bottom: 22px;
+    animation: fadeInUp 0.6s ease 0.05s both;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.blog-chip:hover {
+    border-color: rgba(0, 255, 136, 0.4);
+    background: rgba(0, 255, 136, 0.07);
+    box-shadow: 0 0 24px rgba(0, 255, 136, 0.1);
+}
+
+.blog-chip-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--accent-green);
+    box-shadow: 0 0 8px var(--accent-green);
+    animation: pulse-glow 2s ease-in-out infinite;
+    flex-shrink: 0;
+}
+
+.blog-chip-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--accent-green);
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+.blog-chip-title {
+    font-family: var(--font-display);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
+    max-width: 100%;
+    transition: color 0.2s ease;
+}
+
+.blog-chip:hover .blog-chip-title {
+    color: var(--text-heading);
+}
+
+.blog-chip-more {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--text-dim);
+    flex-shrink: 0;
+    transition: color 0.2s ease;
+}
+
+.blog-chip-more:hover {
+    color: var(--accent-green);
+}
+
+/* ═══════════════════════════════════════════
    HERO
    ═══════════════════════════════════════════ */
 
@@ -1327,6 +1399,12 @@ ul {
 
     .section-prompt {
         margin-bottom: 32px;
+    }
+
+    .blog-chip {
+        margin-bottom: 28px;
+        gap: 8px;
+        padding: 6px 12px 6px 10px;
     }
 
     .lightsout-card {
