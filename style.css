@@ -877,6 +877,18 @@ ul {
     font-size: 14px;
 }
 
+.lightsout-benefits a {
+    color: var(--accent-green);
+    border-bottom: 1px solid rgba(0, 255, 136, 0.35);
+    padding-bottom: 1px;
+    transition: border-color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.lightsout-benefits a:hover {
+    border-bottom-color: var(--accent-green);
+    text-shadow: 0 0 12px rgba(0, 255, 136, 0.4);
+}
+
 .cta-button {
     display: inline-block;
     margin-top: 32px;
