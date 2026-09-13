@@ -5,7 +5,7 @@
 ## Pagine
 
 - [Home](https://rosmoscato.xyz/): Homepage — chi è Rosario Moscato, metodologia Lights-Out, libri e contatti
-- [Progetti](https://rosmoscato.xyz/progetti.html): Progetti open source — TurboDev, 2ndBrain, MySecondBrain, WebWizard
+- [Progetti](https://rosmoscato.xyz/progetti.html): Progetti — TurboDev, Cronisto, MySecondBrain, WebWizard
 - [Curriculum](https://rosmoscato.xyz/cv_rosario.html): Curriculum vitae — carriera, pubblicazioni e talk
 
 ## Contenuti

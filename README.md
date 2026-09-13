@@ -9,7 +9,7 @@ Sito personale di Rosario Moscato — AI Engineer, autore e speaker.
 | File | Contenuto |
 |------|-----------|
 | `index.html` | Homepage con hero, bio, lights-out, libri, contatti |
-| `progetti.html` | Pagina progetti open source (TurboDev, 2ndBrain, MySecondBrain, WebWizard) |
+| `progetti.html` | Pagina progetti (TurboDev, Cronisto, MySecondBrain, WebWizard) |
 | `cv_rosario.html` | Curriculum vitae |
 | `style.css` | Foglio di stile condiviso |
 | `script.js` | Logica i18n (IT/EN, traduzioni inline), animazioni, menu mobile |
