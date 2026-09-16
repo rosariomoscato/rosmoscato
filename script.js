@@ -36,7 +36,7 @@
                 b2: "Review \u2014 controllo qualit\u00e0 e sicurezza secondo OWASP Top 10",
                 b3: "Deploy \u2014 rilascio automatico su cloud con migrazione dati e CI/CD",
                 b4: "Server MCP nativo: applicazioni pronte a interagire con altre AI",
-                b5: "Lavora in perfetta simbiosi con <a href='https://cronisto.vercel.app/' target='_blank' rel='noopener noreferrer'>Cronisto</a>",
+                b5: "Lavora in perfetta simbiosi con <a href='https://www.cronisto.com/' target='_blank' rel='noopener noreferrer'>Cronisto</a>",
                 cta: "LEGGI L'ARTICOLO \u2192"
             },
             books: {
@@ -116,7 +116,7 @@
                 b2: "Review \u2014 quality control and security based on OWASP Top 10",
                 b3: "Deploy \u2014 automated cloud release with data migration and CI/CD",
                 b4: "Native MCP server: applications ready to interact with other AIs",
-                b5: "Works in perfect synergy with <a href='https://cronisto.vercel.app/' target='_blank' rel='noopener noreferrer'>Cronisto</a>",
+                b5: "Works in perfect synergy with <a href='https://www.cronisto.com/' target='_blank' rel='noopener noreferrer'>Cronisto</a>",
                 cta: "READ THE ARTICLE \u2192"
             },
             books: {
