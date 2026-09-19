@@ -2,11 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rosmoscato.xyz/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-09-19</lastmod>
   </url>
   <url>
     <loc>https://rosmoscato.xyz/progetti.html</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-09-19</lastmod>
+  </url>
+  <url>
+    <loc>https://rosmoscato.xyz/cronisto.html</loc>
+    <lastmod>2026-09-19</lastmod>
   </url>
   <url>
     <loc>https://rosmoscato.xyz/cv_rosario.html</loc>

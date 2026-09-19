@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img">
+  <title>Cronisto</title>
+  <style>
+    .fv-i{stroke:#333333}.fv-c{stroke:#6161ff}
+    @media (prefers-color-scheme:dark){.fv-i{stroke:#ECEEF5}}
+  </style>
+  <g transform="translate(-3.58,-3.58) scale(1.0140)">
+    <g fill="none" stroke-width="72" stroke-linecap="butt">
+    <path d="M 382.3 369.8 A 170 170 0 1 1 382.3 142.2" class="fv-i"/>
+    <path d="M 411.3 325.1 A 170 170 0 0 0 411.3 186.9" class="fv-c"/>
+  </g>
+  </g>
+</svg>

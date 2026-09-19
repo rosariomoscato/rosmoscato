@@ -10,6 +10,7 @@
                 cv: "Curriculum",
                 lightsout: "Lights-Out",
                 projects: "Progetti",
+                cronisto: "Cronisto",
                 books: "Libri",
                 contact: "Contatti"
             },
@@ -30,14 +31,14 @@
             },
             lightsout: {
                 prompt: "> lights-out",
-                title: "LIGHTS-OUT SOFTWARE DEVELOPMENT",
+                title: "la Fabbrica del Software",
                 desc: "La \u201cfabbrica al buio\u201d del software: agenti AI cooperanti che progettano, revisionano e rilasciano applicazioni complete in autonomia. L'intervento umano si riduce a una conversazione.",
                 b1: "Start \u2014 progettazione intelligente da conversazione in linguaggio naturale",
                 b2: "Review \u2014 controllo qualit\u00e0 e sicurezza secondo OWASP Top 10",
                 b3: "Deploy \u2014 rilascio automatico su cloud con migrazione dati e CI/CD",
                 b4: "Server MCP nativo: applicazioni pronte a interagire con altre AI",
                 b5: "Lavora in perfetta simbiosi con <a href='https://www.cronisto.com/' target='_blank' rel='noopener noreferrer'>Cronisto</a>",
-                cta: "LEGGI L'ARTICOLO \u2192"
+                cta: "Per INFO sul PROCESSO CONTATTAMI o LEGGI L'ARTICOLO \u2192"
             },
             books: {
                 prompt: "> books",
@@ -90,6 +91,7 @@
                 cv: "Resume",
                 lightsout: "Lights-Out",
                 projects: "Projects",
+                cronisto: "Cronisto",
                 books: "Books",
                 contact: "Contact"
             },
@@ -110,14 +112,14 @@
             },
             lightsout: {
                 prompt: "> lights-out",
-                title: "LIGHTS-OUT SOFTWARE DEVELOPMENT",
+                title: "The Software Factory",
                 desc: "The software \u201cdark factory\u201d: cooperating AI agents that design, review, and ship complete applications autonomously. Human intervention is reduced to a conversation.",
                 b1: "Start \u2014 intelligent design from a natural-language conversation",
                 b2: "Review \u2014 quality control and security based on OWASP Top 10",
                 b3: "Deploy \u2014 automated cloud release with data migration and CI/CD",
                 b4: "Native MCP server: applications ready to interact with other AIs",
                 b5: "Works in perfect synergy with <a href='https://www.cronisto.com/' target='_blank' rel='noopener noreferrer'>Cronisto</a>",
-                cta: "READ THE ARTICLE \u2192"
+                cta: "For PROCESS INFO, CONTACT ME or READ THE ARTICLE \u2192"
             },
             books: {
                 prompt: "> books",

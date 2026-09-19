@@ -5,6 +5,7 @@
 ## Pagine
 
 - [Home](https://rosmoscato.xyz/): Homepage — chi è Rosario Moscato, metodologia Lights-Out, libri e contatti
+- [Cronisto](https://rosmoscato.xyz/cronisto.html): Presentazione di Cronisto, project management assistito dall'AI dal brief all'esecuzione
 - [Progetti](https://rosmoscato.xyz/progetti.html): Progetti — TurboDev, Cronisto, MySecondBrain, WebWizard
 - [Curriculum](https://rosmoscato.xyz/cv_rosario.html): Curriculum vitae — carriera, pubblicazioni e talk
 

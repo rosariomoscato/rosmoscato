@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rosario Moscato — CV | AI Engineer, Author & Speaker</title>
+  <title>Rosario Moscato — Curriculum Vitae | AI Engineer, Autore e Speaker</title>
 <meta name="description" content="Curriculum vitae di Rosario Moscato — AI Engineer, autore, speaker e consulente specializzato in sistemi autonomi, agentic coding, etica AI e neurobioetica.">
 <meta name="author" content="Rosario Moscato">
 <meta name="robots" content="index, follow">
@@ -74,10 +74,29 @@ body {
 
 ::selection { background: var(--accent-green); color: var(--bg-primary); }
 
-a { color: var(--accent-blue); text-decoration: none; }
-a:hover { color: var(--accent-blue-hover); }
+a { color: var(--text-dim); text-decoration: none; }
+a:hover { color: var(--accent-green); }
 
 .page { max-width: 900px; margin: 0 auto; padding: 64px 24px 48px; }
+
+.page-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 8px;
+  border: 1px solid var(--border-light);
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1;
+  white-space: nowrap;
+}
+.lang-btn { border: 0; padding: 4px 2px; background: transparent; color: var(--text-dim); font: inherit; cursor: pointer; }
+.lang-btn:hover, .lang-btn:focus-visible, .lang-btn.active { color: var(--accent-green); }
+.lang-btn:focus-visible { outline: 1px solid var(--accent-green); outline-offset: 3px; border-radius: 2px; }
+.lang-divider { color: var(--text-dimmer); }
 
 /* BACK LINK */
 .back-link {
@@ -151,8 +170,8 @@ h1 span { color: var(--accent-green); }
   box-shadow: 0 0 6px var(--accent-green);
 }
 
-.contact-grid a { color: var(--accent-blue); }
-.contact-grid a:hover { color: var(--accent-blue-hover); }
+.contact-grid a { color: var(--text-dim); }
+.contact-grid a:hover { color: var(--accent-green); }
 
 /* CURSOR */
 .cursor {
@@ -272,7 +291,8 @@ h2.section-label {
 .lecture-item:last-child { border-bottom: none; }
 .lecture-name { font-size: 14px; color: var(--text-heading); }
 .lecture-where { font-size: 13px; color: var(--text-dim); margin-top: 2px; }
-.lecture-where a { color: var(--accent-blue); }
+.lecture-where a { color: var(--text-dim); }
+.lecture-where a:hover { color: var(--accent-green); }
 
 /* EDUCATION */
 .edu-item { margin-bottom: 20px; }
@@ -319,6 +339,9 @@ h2.section-label {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .page { padding-top: 32px; }
+  .page-top { align-items: center; }
+  .back-link { margin-bottom: 32px; }
   .header { grid-template-columns: 1fr; gap: 24px; }
   .two-col { grid-template-columns: 1fr; gap: 32px; }
   .entry { grid-template-columns: 1fr; gap: 8px; }
@@ -353,19 +376,26 @@ h2.section-label {
 <body>
 <main class="page">
 
-  <a href="index.html" class="back-link">← back to home</a>
+  <div class="page-top">
+    <a href="index.html" class="back-link" data-i18n="back">← torna alla home</a>
+    <div class="lang-switch" role="group" aria-label="Seleziona lingua">
+      <button class="lang-btn active" type="button" data-lang="it" aria-pressed="true">IT</button>
+      <span class="lang-divider" aria-hidden="true">|</span>
+      <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
 
   <!-- HEADER -->
   <header class="header">
     <div class="header-left">
-      <div class="prompt">// curriculum_vitae.json — updated May 2026</div>
+      <div class="prompt" data-i18n="prompt">// curriculum_vitae.json — aggiornato a maggio 2026</div>
       <h1>Rosario <span>Moscato</span><span class="cursor"></span></h1>
       <div class="title-line">
-        Chief AI Officer | AI Ethicist | TEDx Speaker | Books Author
+        <span data-i18n="headline">Chief AI Officer | Eticista dell'IA | Speaker TEDx | Autore</span>
       </div>
     </div>
     <address class="contact-grid">
-      <div class="contact-item"><div class="dot"></div>Napoli, Italy — 9 Jan 1972</div>
+      <div class="contact-item"><div class="dot"></div><span data-i18n="location">Napoli, Italia — 9 gen 1972</span></div>
       <div class="contact-item"><div class="dot"></div><a href="mailto:ros.moscato@gmail.com">ros.moscato@gmail.com</a></div>
       <div class="contact-item"><div class="dot"></div><a href="https://blog.rosmoscato.xyz/" target="_blank" rel="noopener noreferrer">blog.rosmoscato.xyz</a></div>
       <div class="contact-item"><div class="dot"></div><a href="https://linkedin.com/in/rosariomoscato" target="_blank" rel="noopener noreferrer">linkedin.com/in/rosariomoscato</a></div>
@@ -376,26 +406,26 @@ h2.section-label {
   <!-- SKILLS -->
   <section class="section">
     <div class="section-header">
-      <h2 class="section-label">core_skills</h2>
+      <h2 class="section-label" data-i18n="core_skills">competenze_chiave</h2>
       <div class="section-line"></div>
     </div>
     <div class="skills-grid">
-      <span class="skill-tag">Long Running Agents Harnessing</span>
+      <span class="skill-tag" data-i18n="skill1">Orchestrazione di agenti a lunga esecuzione</span>
       <span class="skill-tag">Agentic Coding</span>
       <span class="skill-tag">Claude Code</span>
       <span class="skill-tag">Open Code</span>
       <span class="skill-tag">Codex</span>
-      <span class="skill-tag">Lights-Out Methodology</span>
+      <span class="skill-tag" data-i18n="skill6">Metodologia Lights-Out</span>
       <span class="skill-tag">Machine Learning</span>
       <span class="skill-tag">Deep Learning</span>
       <span class="skill-tag">NLP</span>
       <span class="skill-tag">Generative AI</span>
-      <span class="skill-tag">AI Ethics</span>
+      <span class="skill-tag" data-i18n="skill11">Etica dell'IA</span>
       <span class="skill-tag">Computer Vision</span>
       <span class="skill-tag">MLOps</span>
       <span class="skill-tag">Vercel</span>
       <span class="skill-tag">Docker / Podman</span>
-      <span class="skill-tag">Web Apps</span>
+      <span class="skill-tag" data-i18n="skill16">Applicazioni web</span>
       <span class="skill-tag">Hyperautomation</span>
       <span class="skill-tag">PWA</span>
       <span class="skill-tag">No-code</span>
@@ -404,7 +434,7 @@ h2.section-label {
   <!-- WORK EXPERIENCE -->
   <section class="section">
     <div class="section-header">
-      <h2 class="section-label">work_experience</h2>
+      <h2 class="section-label" data-i18n="work_experience">esperienza_professionale</h2>
       <div class="section-line"></div>
     </div>
 
@@ -709,5 +739,116 @@ h2.section-label {
   </footer>
 
 </main>
+<script>
+(() => {
+  const italian = {
+    back: '← torna alla home',
+    prompt: '// curriculum_vitae.json — aggiornato a maggio 2026',
+    headline: 'Chief AI Officer | Eticista dell\'IA | Speaker TEDx | Autore',
+    location: 'Napoli, Italia — 9 gen 1972',
+    core_skills: 'competenze_chiave',
+    work_experience: 'esperienza_professionale',
+    education: 'formazione', languages: 'lingue', publications: 'pubblicazioni',
+    teaching: 'didattica e lezioni',
+    skills: ['Orchestrazione di agenti a lunga esecuzione', 'Agentic Coding', 'Claude Code', 'Open Code', 'Codex', 'Metodologia Lights-Out', 'Machine Learning', 'Deep Learning', 'NLP', 'IA generativa', 'Etica dell\'IA', 'Computer Vision', 'MLOps', 'Vercel', 'Docker / Podman', 'Applicazioni web', 'Iperautomazione', 'PWA', 'No-code'],
+    dates: ['mag 2026<br>— <span class="present">in corso</span>', 'apr 2026<br>— <span class="present">in corso</span>', 'nov 2024<br>— <span class="present">in corso</span>', 'set 2023<br>— <span class="present">in corso</span>', 'giu 2024<br>— <span class="present">in corso</span>', 'gen 2023<br>— giu 2026', 'mar 2022<br>— dic 2022', 'feb 2020<br>— feb 2022', 'lug 2018<br>— lug 2020', 'gen 2015<br>— giu 2018', 'dic 2013<br>— dic 2014', 'mag 2007<br>— giu 2013', 'giu 2006<br>— giu 2007', 'giu 2004<br>— giu 2006', 'mag 2000<br>— mag 2004'],
+    roles: ['Responsabile Innovazione e Sostenibilità', 'Membro del Consiglio', 'Presidente e Chief AI Officer', 'Coordinatore — Neurobioetica e IA', 'Autore della sezione IA', 'CTO / CAIO', 'Senior Data Scientist', 'Senior Technical Account Manager', 'Titolare — Studio Modelli IA e POC', 'Vicepresidente Estero', 'Direttore Europa Meridionale', 'Direttore Dispositivi Mobili', 'Program Manager', 'Responsabile di progetto — Gruppo R&S', 'Analista software e DBA'],
+    degrees: ['Master post-laurea — Scienza e Fede <span class="laude">M.c.L.</span>', 'Diploma in Apologetica <span class="laude">M.c.L.</span>', 'Master post-laurea — Progettazione software Internet', 'Ingegneria Elettronica (Biomedica)'],
+    educationDates: ['ott 2017 – giu 2019', 'ott 2011 – giu 2012', 'mag 2000 – dic 2000', 'ott 1990 – mar 1999'],
+    thesis: 'Tesi: "Impiego di sistemi di videoconferenza in applicazioni di telemedicina"',
+    languageTags: ['Italiano — Madrelingua', 'Inglese — C2'],
+    lectures: ['Modulo tecnico-informatico del corso "Metafisica dell\'Algoritmo"', 'Produzione autonoma di software', '"Neurobioetica e Intelligenza Artificiale", corso "Elementi di Neurobioetica"', 'Elaborazione del linguaggio naturale: modulo pratico', 'Introduzione all\'Intelligenza Artificiale', 'Introduzione all\'elaborazione del linguaggio naturale', 'NLP · Etica dell\'IA · Streamlit · Gradio · PyGame'],
+    lectureWhere: ['Laurea magistrale in Filosofia · Ateneo Pontificio Regina Apostolorum — 2026', 'Master IA e Data Science · Università della Calabria — 2026', 'Ateneo Pontificio Regina Apostolorum — 2026', 'Master IA e Data Science · Università della Calabria — 2025', 'Master in Scienza e Fede — Ateneo Pontificio Regina Apostolorum — dal 2019<br>Corso di Perfezionamento in Neurobioetica — Ateneo Pontificio Regina Apostolorum — dal 2019', 'Università Europea di Roma · Universidad Francisco de Vitoria · Universidad Anáhuac Online — 2020', 'corsi online su Udemy'],
+    availability: 'disponibile per consulenze e interventi come speaker',
+    legal: 'Autorizzo il trattamento dei dati personali ai sensi dell\'art. 13 d.lgs. 30/06/2006 · GDPR 679/16'
+  };
+  const englishOverrides = {
+    back: '← back to home', prompt: '// curriculum_vitae.json — updated May 2026',
+    headline: 'Chief AI Officer | AI Ethicist | TEDx Speaker | Books Author', location: 'Napoli, Italy — 9 Jan 1972',
+    core_skills: 'core_skills', work_experience: 'work_experience',
+    skill1: 'Long Running Agents Harnessing', skill6: 'Lights-Out Methodology', skill11: 'AI Ethics', skill16: 'Web Apps'
+  };
+  const english = {
+    skills: ['Long Running Agents Harnessing', 'Agentic Coding', 'Claude Code', 'Open Code', 'Codex', 'Lights-Out Methodology', 'Machine Learning', 'Deep Learning', 'NLP', 'Generative AI', 'AI Ethics', 'Computer Vision', 'MLOps', 'Vercel', 'Docker / Podman', 'Web Apps', 'Hyperautomation', 'PWA', 'No-code'],
+    dates: ['May 2026<br>— <span class="present">present</span>', 'Apr 2026<br>— <span class="present">present</span>', 'Nov 2024<br>— <span class="present">present</span>', 'Sep 2023<br>— <span class="present">present</span>', 'Jun 2024<br>— <span class="present">present</span>', 'Jan 2023<br>— Jun 2026', 'Mar 2022<br>— Dec 2022', 'Feb 2020<br>— Feb 2022', 'Jul 2018<br>— Jul 2020', 'Jan 2015<br>— Jun 2018', 'Dec 2013<br>— Dec 2014', 'May 2007<br>— Jun 2013', 'Jun 2006<br>— Jun 2007', 'Jun 2004<br>— Jun 2006', 'May 2000<br>— May 2004'],
+    roles: ['Head of Innovation & Sustainability', 'Board Member', 'President & Chief AI Officer', 'Coordinator — Neurobioethics & AI', 'AI Section Author', 'CTO / CAIO', 'Senior Data Scientist', 'Senior Technical Account Manager', 'Owner — AI Models & POCs Studio', 'Vice President Overseas', 'South Europe Director', 'Mobile Devices Director', 'Program Manager', 'Project Leader — R&D Group', 'Software Analyst & DBA'],
+    degrees: ['Postgrad. Master — Scienza e Fede <span class="laude">M.c.L.</span>', 'Diploma in Apologetica <span class="laude">M.c.L.</span>', 'Postgrad. Master — Internet Software Design', 'Ingegneria Elettronica (Biomedica)'],
+    educationDates: ['Oct 2017 – Jun 2019', 'Oct 2011 – Jun 2012', 'May 2000 – Dec 2000', 'Oct 1990 – Mar 1999'],
+    languageTags: ['Italian — Native', 'English — C2'],
+    lectures: ['Modulo Tecnico-Informatico corso "Metafisica dell\'Algoritmo"', 'Autonomous Software Manufacturing', '"Neurobioetica e Intelligenza Artificiale" corso "Elementi di Neurobioetica"', 'Natural Language Processing: Modulo Pratico', 'Introduzione all\'Intelligenza Artificiale', 'Introduction to Natural Language Processing', 'NLP · AI Ethics · Streamlit · Gradio · PyGame'],
+    lectureWhere: ['Laurea Magistrale in Filosofia · Ateneo Pontificio Regina Apostolorum — 2026', 'Master AI & Data Science · Università della Calabria — 2026', 'Ateneo Pontificio Regina Apostolorum — 2026', 'Master AI & Data Science · Università della Calabria — 2025', 'Master in Scienza e Fede — Ateneo Pontificio Regina Apostolorum — since 2019<br>Corso di Perfezionamento in Neurobioetica — Ateneo Pontificio Regina Apostolorum — since 2019', 'Università Europea di Roma · Universidad Francisco de Vitoria · Universidad Anáhuac Online — 2020', 'online courses on Udemy']
+  };
+  const text = (selector, key, value, html = false) => {
+    const element = document.querySelector(selector);
+    if (!element) return;
+    element.dataset.i18n = key;
+    element.dataset.en = englishOverrides[key] || (html ? element.innerHTML : element.textContent);
+    element.dataset.it = value;
+    element.dataset.html = html;
+  };
+  const list = (selector, prefix, values, englishValues, html = false) => document.querySelectorAll(selector).forEach((element, index) => {
+    const key = `${prefix}${index}`;
+    element.dataset.i18n = key;
+    element.dataset.en = englishValues[index];
+    element.dataset.it = values[index];
+    element.dataset.html = html;
+  });
+
+  text('.back-link', 'back', italian.back); text('.prompt', 'prompt', italian.prompt);
+  text('.title-line span', 'headline', italian.headline); text('.contact-item span', 'location', italian.location);
+  text('.section-label', 'core_skills', italian.core_skills);
+  document.querySelectorAll('.section-label').forEach((element, index) => {
+    const keys = ['core_skills', 'work_experience', 'education', 'languages', 'publications', 'teaching'];
+    const values = [italian.core_skills, italian.work_experience, italian.education, italian.languages, italian.publications, italian.teaching];
+    const key = keys[index]; element.dataset.i18n = key; element.dataset.en = englishOverrides[key] || element.textContent; element.dataset.it = values[index];
+  });
+  list('.skills-grid .skill-tag', 'skill', italian.skills, english.skills);
+  list('.date-range', 'date', italian.dates, english.dates, true); list('.entry-title', 'role', italian.roles, english.roles);
+  list('.edu-degree', 'degree', italian.degrees, english.degrees, true); list('.edu-date:not([style])', 'educationDate', italian.educationDates, english.educationDates);
+  text('.edu-date[style]', 'thesis', italian.thesis);
+  document.querySelectorAll('.edu-item + div .skill-tag').forEach((element, index) => {
+    const key = `language${index}`; element.dataset.i18n = key; element.dataset.en = english.languageTags[index]; element.dataset.it = italian.languageTags[index];
+  });
+  list('.lecture-name', 'lecture', italian.lectures, english.lectures); list('.lecture-where', 'lectureWhere', italian.lectureWhere, english.lectureWhere, true);
+  text('.status-bar', 'availability', `<div class="status-dot"></div> ${italian.availability}`, true);
+  text('.footer > div:last-child', 'legal', italian.legal);
+
+  const metadata = {
+    it: {
+      title: 'Rosario Moscato — Curriculum Vitae | AI Engineer, Autore e Speaker',
+      description: 'Curriculum vitae di Rosario Moscato — AI Engineer, autore, speaker e consulente specializzato in sistemi autonomi, agentic coding, etica AI e neurobioetica.',
+      ogTitle: 'Rosario Moscato — Curriculum Vitae', ogDescription: 'AI Engineer, autore, speaker specializzato in sistemi autonomi, agentic coding, etica AI e neurobioetica.', locale: 'it_IT'
+    },
+    en: {
+      title: 'Rosario Moscato — CV | AI Engineer, Author & Speaker',
+      description: 'Curriculum vitae of Rosario Moscato — AI Engineer, author, speaker and consultant specializing in autonomous systems, agentic coding, AI ethics and neurobioethics.',
+      ogTitle: 'Rosario Moscato — Curriculum Vitae', ogDescription: 'AI Engineer, author and speaker specializing in autonomous systems, agentic coding, AI ethics and neurobioethics.', locale: 'en_US'
+    }
+  };
+  const setMeta = (selector, value) => document.querySelector(selector).setAttribute('content', value);
+  const setLanguage = (lang) => {
+    const selected = lang === 'en' ? 'en' : 'it';
+    document.documentElement.lang = selected;
+    document.querySelectorAll('[data-i18n]').forEach((element) => {
+      const value = element.dataset[selected];
+      if (element.dataset.html === 'true') element.innerHTML = value;
+      else element.textContent = value;
+    });
+    document.querySelectorAll('.lang-btn').forEach((button) => {
+      const active = button.dataset.lang === selected;
+      button.classList.toggle('active', active); button.setAttribute('aria-pressed', String(active));
+    });
+    document.querySelector('.lang-switch').setAttribute('aria-label', selected === 'it' ? 'Seleziona lingua' : 'Select language');
+    const meta = metadata[selected]; document.title = meta.title;
+    setMeta('meta[name="description"]', meta.description); setMeta('meta[property="og:title"]', meta.ogTitle);
+    setMeta('meta[property="og:description"]', meta.ogDescription); setMeta('meta[property="og:locale"]', meta.locale);
+    setMeta('meta[name="twitter:title"]', meta.ogTitle); setMeta('meta[name="twitter:description"]', meta.ogDescription);
+    try { localStorage.setItem('lang', selected); } catch (_) { /* Storage may be unavailable. */ }
+  };
+  let initial = 'it'; try { initial = localStorage.getItem('lang') === 'en' ? 'en' : 'it'; } catch (_) { /* Italian is the fallback. */ }
+  document.querySelectorAll('.lang-btn').forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
+  setLanguage(initial);
+})();
+</script>
 </body>
 </html>
