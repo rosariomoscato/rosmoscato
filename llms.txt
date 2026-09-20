@@ -6,16 +6,12 @@
 
 - [Home](https://rosmoscato.xyz/): Homepage — chi è Rosario Moscato, metodologia Lights-Out, libri e contatti
 - [Cronisto](https://rosmoscato.xyz/cronisto.html): Presentazione di Cronisto, project management assistito dall'AI dal brief all'esecuzione
-- [Progetti](https://rosmoscato.xyz/progetti.html): Progetti — TurboDev, Cronisto, MySecondBrain, WebWizard
 - [Curriculum](https://rosmoscato.xyz/cv_rosario.html): Curriculum vitae — carriera, pubblicazioni e talk
 
 ## Contenuti
 
 - [Blog — Oltre l'Algoritmo](https://blog.rosmoscato.xyz/): Articoli su AI, agenti autonomi e cultura digitale
 - [La "Fabbrica al Buio" del Software](https://blog.rosmoscato.xyz/la-fabbrica-al-buio-del-software/): La metodologia Lights-Out Software Development (Start → Review → Deploy)
-- [Documentazione TurboDev](https://rosmoscato.xyz/turbodev/): Guida completa al coding agent da terminale (IT/EN)
-- [Documentazione TurboDev — Italiano](https://rosmoscato.xyz/turbodev/it/): Guida completa al coding agent da terminale in italiano
-- [TurboDev Docs — English](https://rosmoscato.xyz/turbodev/en/): Full guide to the terminal-based coding agent in English
 
 ## Altro
 

@@ -9,7 +9,6 @@
                 blog: "Blog",
                 cv: "Curriculum",
                 lightsout: "Lights-Out",
-                projects: "Progetti",
                 cronisto: "Cronisto",
                 books: "Libri",
                 contact: "Contatti"
@@ -58,18 +57,6 @@
                 label: "DAL BLOG",
                 more: "Blog \u2192"
             },
-            projects: {
-                prompt: "> projects",
-                title: "I miei progetti",
-                subtitle: "Strumenti open source che costruisco per la community di sviluppatori AI.",
-                turbodev_desc: "AI coding agent da terminale con streaming in tempo reale. Sistema multi-agente con switch istantaneo, 12 strumenti integrati, integrazione Git/GitHub completa, permessi granulari, gestione contesto window, tracciamento costi e persistenza sessioni.",
-                cronisto_desc: "Gestione progetti da solo o in gruppo: per ogni task stima duale dei costi in giorni uomo vs giorni AI, con prezzi dei modelli live e confronto tra scenari (tutto umano, tutto AI o mix) direttamente in euro.",
-                open_app: "Apri l'app",
-                mysecondbrain_desc: "Tool personale per esplorare, cercare e interrogare le tue note markdown con l'IA. Grafo interattivo con drag & drop e nodi per link esterni, ricerca semantica per significato, Q&A AI con citazioni delle fonti, editing inline delle note, preferiti e modalità offline/PWA.",
-                webwizard_desc: "Piattaforma self-hostata per audit automatico di siti web, analisi SEO e monitoraggio della reputazione del brand. Scansioni pianificate di portali di siti, scoring, raccomandazioni AI prioritarie, esportazione CSV/Excel/PDF e scansione anche dietro login.",
-                view_github: "Vedi su GitHub",
-                view_docs: "Documentazione"
-            },
             contact: {
                 prompt: "> contact",
                 consultancy_label: "consulenza:",
@@ -90,7 +77,6 @@
                 blog: "Blog",
                 cv: "Resume",
                 lightsout: "Lights-Out",
-                projects: "Projects",
                 cronisto: "Cronisto",
                 books: "Books",
                 contact: "Contact"
@@ -138,18 +124,6 @@
             blog: {
                 label: "FROM THE BLOG",
                 more: "Blog \u2192"
-            },
-            projects: {
-                prompt: "> projects",
-                title: "My Projects",
-                subtitle: "Open source tools I build for the AI developer community.",
-                turbodev_desc: "Terminal-based AI coding agent with real-time streaming. Multi-agent system with instant switching, 12 built-in tools, full Git/GitHub integration, granular permissions, context window management, cost tracking, and session persistence.",
-                cronisto_desc: "Project management solo or as a team: dual cost estimates per task in man-days vs AI-days, with live model pricing and scenario comparison (all human, all AI, or mixed), straight in euros.",
-                open_app: "Open app",
-                mysecondbrain_desc: "Personal tool to explore, search, and query your markdown notes with AI. Interactive graph with drag & drop and external links nodes, semantic search for meaning, AI Q&A with source citations, inline note editing, bookmarks/favorites, and offline PWA mode.",
-                webwizard_desc: "Self-hosted platform for automated website auditing, SEO analysis, and brand reputation monitoring. Scheduled scanning of site portfolios, scoring, prioritized AI recommendations, CSV/Excel/PDF export, and behind-login scanning.",
-                view_github: "View on GitHub",
-                view_docs: "Documentation"
             },
             contact: {
                 prompt: "> contact",
@@ -269,7 +243,7 @@
         var reveals = document.querySelectorAll('.reveal');
         if (!reveals.length) return;
 
-        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
             reveals.forEach(function (el) { el.classList.add('revealed'); });
             return;
         }

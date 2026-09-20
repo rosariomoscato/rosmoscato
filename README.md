@@ -10,7 +10,6 @@ Sito personale di Rosario Moscato — AI Engineer, autore e speaker.
 |------|-----------|
 | `index.html` | Homepage con hero, bio, lights-out, libri, contatti |
 | `cronisto.html` | Landing page di presentazione di Cronisto |
-| `progetti.html` | Pagina progetti (TurboDev, Cronisto, MySecondBrain, WebWizard) |
 | `cv_rosario.html` | Curriculum vitae |
 | `style.css` | Foglio di stile condiviso |
 | `script.js` | Logica i18n (IT/EN, traduzioni inline), animazioni, menu mobile |
