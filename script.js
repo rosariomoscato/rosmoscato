@@ -57,6 +57,11 @@
                 label: "DAL BLOG",
                 more: "Blog \u2192"
             },
+            talk: {
+                prompt: "> interventi",
+                desc: "Il mio intervento TEDx sull'etica dell'intelligenza artificiale e sulle scelte che guideranno il nostro futuro.",
+                cta: "Guarda il talk su YouTube \u2197"
+            },
             contact: {
                 prompt: "> contact",
                 consultancy_label: "consulenza:",
@@ -124,6 +129,11 @@
             blog: {
                 label: "FROM THE BLOG",
                 more: "Blog \u2192"
+            },
+            talk: {
+                prompt: "> talks",
+                desc: "My TEDx talk on AI ethics and the choices that will shape our future.",
+                cta: "Watch the talk on YouTube \u2197"
             },
             contact: {
                 prompt: "> contact",

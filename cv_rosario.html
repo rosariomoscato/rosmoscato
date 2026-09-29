@@ -150,6 +150,14 @@ h1 span { color: var(--accent-green); }
   max-width: 520px;
 }
 
+.tedx-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--accent-green);
+}
+
 .contact-grid {
   display: flex;
   flex-direction: column;
@@ -392,6 +400,7 @@ h2.section-label {
       <h1>Rosario <span>Moscato</span><span class="cursor"></span></h1>
       <div class="title-line">
         <span data-i18n="headline">Chief AI Officer | Eticista dell'IA | Speaker TEDx | Autore</span>
+        <br><a class="tedx-link" href="https://www.youtube.com/watch?v=2T8aoCWZ4CE" target="_blank" rel="noopener noreferrer" data-i18n="tedx_link">Guarda il mio talk TEDxNTUA ↗</a>
       </div>
     </div>
     <address class="contact-grid">
@@ -745,6 +754,7 @@ h2.section-label {
     back: '← torna alla home',
     prompt: '// curriculum_vitae.json — aggiornato a maggio 2026',
     headline: 'Chief AI Officer | Eticista dell\'IA | Speaker TEDx | Autore',
+    tedx_link: 'Guarda il mio talk TEDxNTUA ↗',
     location: 'Napoli, Italia — 9 gen 1972',
     core_skills: 'competenze_chiave',
     work_experience: 'esperienza_professionale',
@@ -764,7 +774,7 @@ h2.section-label {
   };
   const englishOverrides = {
     back: '← back to home', prompt: '// curriculum_vitae.json — updated May 2026',
-    headline: 'Chief AI Officer | AI Ethicist | TEDx Speaker | Books Author', location: 'Napoli, Italy — 9 Jan 1972',
+    headline: 'Chief AI Officer | AI Ethicist | TEDx Speaker | Books Author', tedx_link: 'Watch my TEDxNTUA talk ↗', location: 'Napoli, Italy — 9 Jan 1972',
     core_skills: 'core_skills', work_experience: 'work_experience',
     skill1: 'Long Running Agents Harnessing', skill6: 'Lights-Out Methodology', skill11: 'AI Ethics', skill16: 'Web Apps'
   };
@@ -795,7 +805,7 @@ h2.section-label {
   });
 
   text('.back-link', 'back', italian.back); text('.prompt', 'prompt', italian.prompt);
-  text('.title-line span', 'headline', italian.headline); text('.contact-item span', 'location', italian.location);
+  text('.title-line span', 'headline', italian.headline); text('.tedx-link', 'tedx_link', italian.tedx_link); text('.contact-item span', 'location', italian.location);
   text('.section-label', 'core_skills', italian.core_skills);
   document.querySelectorAll('.section-label').forEach((element, index) => {
     const keys = ['core_skills', 'work_experience', 'education', 'languages', 'publications', 'teaching'];
