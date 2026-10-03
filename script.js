@@ -72,7 +72,7 @@
                 amazon_label: "amazon:"
             },
             footer: {
-                copy: "\u00a9 2026 Rosario Moscato. Tutti i diritti riservati."
+                copy: "\u00a9 2026 Rosario Moscato - handcrafted by a human, upgraded by agents."
             }
         },
         en: {
@@ -145,7 +145,7 @@
                 amazon_label: "amazon:"
             },
             footer: {
-                copy: "\u00a9 2026 Rosario Moscato. All rights reserved."
+                copy: "\u00a9 2026 Rosario Moscato - handcrafted by a human, upgraded by agents."
             }
         }
     };
