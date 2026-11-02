@@ -4,6 +4,12 @@
   let selected;
   try { selected = new URLSearchParams(location.search).get('theme') || localStorage.getItem('portfolio-theme'); } catch (_) {}
   root.dataset.theme = selected === 'dark' || selected === 'light' ? selected : (matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light');
+  const syncFavicon = () => {
+    const icon = document.querySelector('link[data-theme-favicon]');
+    const href = icon?.dataset[root.dataset.theme];
+    if (href && icon.getAttribute('href') !== href) icon.setAttribute('href', href);
+  };
+  syncFavicon();
   const mount = () => {
     const control = document.createElement('div');
     control.className = 'theme-control';
@@ -11,6 +17,7 @@
     control.innerHTML = '<button type="button" data-theme-choice="light"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 1v3m0 16v3M1 12h3m16 0h3M4 4l2 2m12 12 2 2M4 20l2-2M18 6l2-2"/></svg><span></span></button><button type="button" data-theme-choice="dark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.5A9 9 0 0 1 8.5 4 9 9 0 1 0 20 15.5Z"/></svg><span></span></button>';
     const update = () => {
       const en = root.lang === 'en';
+      syncFavicon();
       document.querySelector('meta[name="theme-color"]')?.setAttribute('content', getComputedStyle(root).getPropertyValue('--bg-primary').trim());
       control.setAttribute('aria-label', en ? 'Appearance' : 'Aspetto');
       control.querySelectorAll('button').forEach(button => {
