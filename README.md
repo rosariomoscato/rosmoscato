@@ -14,6 +14,7 @@ Sito personale di Rosario Moscato — AI Engineer, autore e speaker.
 | `style.css` | Foglio di stile condiviso |
 | `script.js` | Traduzioni IT/EN della home, reveal progressivi e ultimo articolo del blog |
 | `navigation.js` | Menu condiviso, focus da tastiera e indicatore della sezione attiva |
+| `theme.css`, `theme.js` | Stile editoriale contemporaneo e selezione persistente del tema chiaro/scuro |
 | `cv_rosario.css`, `cv_rosario.js` | Layout e traduzioni del Curriculum |
 | `privacy.html`, `note-legali.html` | Informativa privacy/cookie e note legali bilingui |
 | `legal.css`, `legal.js` | Stili e traduzioni delle pagine legali |
