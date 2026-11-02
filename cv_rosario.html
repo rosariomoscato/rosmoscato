@@ -23,341 +23,7 @@
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/outfit-latin.woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0a0f'/><text x='5' y='23' font-family='monospace' font-size='18' fill='%2300ff88' font-weight='bold'>&gt;_</text></svg>">
-<style>
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
-address {
-  font-style: normal;
-}
-
-:root {
-  --bg-primary: #0a0a0f;
-  --bg-surface: #0e0e16;
-  --bg-card: #13131d;
-  --bg-card-hover: #18182a;
-  --text-primary: #d4d4d8;
-  --text-heading: #f4f4f5;
-  --text-dim: #8e8ea0;
-  --text-dimmer: #66667a;
-  --accent-green: #00ff88;
-  --accent-blue: #2563EB;
-  --accent-blue-hover: #3b82f6;
-  --border: #1a1a28;
-  --border-light: #22223a;
-  --font-display: 'Space Grotesk', sans-serif;
-  --font-body: 'Outfit', sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-}
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-  font-family: var(--font-body);
-  background: var(--bg-primary);
-  color: var(--text-primary);
-  font-size: 16px;
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-::selection { background: var(--accent-green); color: var(--bg-primary); }
-
-a { color: var(--text-dim); text-decoration: none; }
-a:hover { color: var(--accent-green); }
-
-.page { max-width: 900px; margin: 0 auto; padding: 64px 24px 48px; }
-
-.page-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
-
-.lang-switch {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  padding: 4px 8px;
-  border: 1px solid var(--border-light);
-  border-radius: 999px;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  line-height: 1;
-  white-space: nowrap;
-}
-.lang-btn { border: 0; padding: 4px 2px; background: transparent; color: var(--text-dim); font: inherit; cursor: pointer; }
-.lang-btn:hover, .lang-btn:focus-visible, .lang-btn.active { color: var(--accent-green); }
-.lang-btn:focus-visible { outline: 1px solid var(--accent-green); outline-offset: 3px; border-radius: 2px; }
-.lang-divider { color: var(--text-dimmer); }
-
-/* BACK LINK */
-.back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--text-dim);
-  margin-bottom: 48px;
-  transition: color 0.2s ease;
-}
-.back-link:hover { color: var(--accent-green); }
-
-/* HEADER */
-.header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 40px;
-  align-items: start;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 40px;
-  margin-bottom: 48px;
-}
-
-.prompt {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--accent-green);
-  margin-bottom: 12px;
-  text-shadow: 0 0 14px rgba(0, 255, 136, 0.35);
-}
-
-h1 {
-  font-family: var(--font-display);
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  color: var(--text-heading);
-  line-height: 1.1;
-}
-
-h1 span { color: var(--accent-green); }
-
-.title-line {
-  font-family: var(--font-body);
-  font-size: 16px;
-  color: var(--text-dim);
-  margin-top: 12px;
-  line-height: 1.6;
-  max-width: 520px;
-}
-
-.tedx-link {
-  display: inline-block;
-  margin-top: 8px;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--accent-green);
-}
-
-.contact-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--text-dim);
-}
-
-.contact-item { display: flex; align-items: center; gap: 10px; }
-
-.dot {
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: var(--accent-green);
-  flex-shrink: 0;
-  box-shadow: 0 0 6px var(--accent-green);
-}
-
-.contact-grid a { color: var(--text-dim); }
-.contact-grid a:hover { color: var(--accent-green); }
-
-/* CURSOR */
-.cursor {
-  display: inline-block;
-  width: 2px;
-  height: 16px;
-  background: var(--accent-green);
-  animation: blink 1s step-end infinite;
-  vertical-align: middle;
-  margin-left: 2px;
-}
-
-@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
-
-/* SECTION */
-.section { margin-bottom: 48px; }
-
-.section-header {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 24px;
-}
-
-h2.section-label {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  color: var(--accent-green);
-  text-transform: uppercase;
-  flex-shrink: 0;
-  margin: 0;
-  font-weight: inherit;
-}
-
-.section-line { flex: 1; height: 1px; background: var(--border); }
-
-/* EXPERIENCE */
-.entry {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 20px;
-  margin-bottom: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--border);
-  transition: border-color 0.25s ease;
-}
-
-.entry:hover {
-  border-bottom-color: var(--border-light);
-}
-
-.entry:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-
-.entry-meta { text-align: right; padding-top: 2px; }
-
-.date-range {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  color: var(--text-dim);
-  line-height: 1.5;
-}
-
-.date-range .present { color: var(--accent-green); font-size: 11px; }
-
-.org { font-family: var(--font-mono); font-size: 11px; color: var(--text-dimmer); margin-top: 4px; }
-
-.entry-title {
-  font-family: var(--font-display);
-  font-size: 17px;
-  font-weight: 600;
-  color: var(--text-heading);
-  margin-bottom: 2px;
-}
-
-.entry-sub { font-size: 14px; color: var(--text-dim); }
-.entry-detail { font-size: 13px; color: var(--text-dimmer); margin-top: 4px; font-style: italic; }
-
-/* TWO-COL */
-.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
-
-/* SKILLS */
-.skills-grid { display: flex; flex-wrap: wrap; gap: 8px; }
-
-.skill-tag {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  padding: 5px 12px;
-  background: rgba(0, 255, 136, 0.06);
-  border: 1px solid rgba(0, 255, 136, 0.2);
-  border-radius: 4px;
-  color: var(--accent-green);
-  letter-spacing: 0.01em;
-}
-
-/* BOOKS */
-.book-item {
-  padding: 12px 16px;
-  background: var(--bg-card);
-  border-left: 2px solid var(--accent-green);
-  margin-bottom: 10px;
-  border-radius: 0 6px 6px 0;
-  transition: background 0.25s ease, transform 0.25s ease;
-}
-
-.book-item:hover {
-  background: var(--bg-card-hover);
-  transform: translateX(3px);
-}
-
-.book-title { font-family: var(--font-display); font-size: 14px; color: var(--text-heading); line-height: 1.4; }
-.book-pub { font-size: 13px; color: var(--text-dim); margin-top: 2px; }
-.book-isbn { font-family: var(--font-mono); font-size: 11px; color: var(--text-dimmer); margin-top: 2px; }
-
-/* LECTURES */
-.lecture-item { padding: 10px 0; border-bottom: 1px solid var(--border); }
-.lecture-item:last-child { border-bottom: none; }
-.lecture-name { font-size: 14px; color: var(--text-heading); }
-.lecture-where { font-size: 13px; color: var(--text-dim); margin-top: 2px; }
-.lecture-where a { color: var(--text-dim); }
-.lecture-where a:hover { color: var(--accent-green); }
-
-/* EDUCATION */
-.edu-item { margin-bottom: 20px; }
-.edu-degree { font-family: var(--font-display); font-size: 15px; color: var(--text-heading); font-weight: 500; }
-.edu-inst { font-size: 13px; color: var(--text-dim); margin-top: 2px; }
-.edu-date { font-family: var(--font-mono); font-size: 11px; color: var(--text-dimmer); margin-top: 2px; }
-
-.laude {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  color: var(--accent-green);
-  background: rgba(0, 255, 136, 0.06);
-  border: 1px solid rgba(0, 255, 136, 0.2);
-  padding: 1px 6px;
-  border-radius: 2px;
-  vertical-align: middle;
-  margin-left: 6px;
-}
-
-/* FOOTER */
-.footer {
-  margin-top: 56px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
-  font-size: 12px;
-  color: var(--text-dimmer);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.status-bar { display: flex; align-items: center; gap: 10px; }
-
-.status-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--accent-green);
-  box-shadow: 0 0 6px var(--accent-green);
-  animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .page { padding-top: 32px; }
-  .page-top { align-items: center; }
-  .back-link { margin-bottom: 32px; }
-  .header { grid-template-columns: 1fr; gap: 24px; }
-  .two-col { grid-template-columns: 1fr; gap: 32px; }
-  .entry { grid-template-columns: 1fr; gap: 8px; }
-  .entry-meta { text-align: left; }
-  .footer { flex-direction: column; gap: 12px; text-align: center; }
-  h1 { font-size: 32px; }
-}
-</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -380,36 +46,68 @@ h2.section-label {
   "alumniOf": { "@type": "CollegeOrUniversity", "name": "Università di Napoli Federico II" }
 }
 </script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="cv_rosario.css">
 </head>
-<body>
+<body><header class="site-header" id="site-header">
+        <div class="container header-inner">
+
+
+            <div class="header-right">
+                <nav class="main-nav" id="main-nav">
+                    <a href="./#home" data-nav-key="nav.home">Home</a>
+                    <a href="./#about" data-nav-key="nav.about">Chi sono</a>
+                    <a href="./#lights-out" data-nav-key="nav.lightsout">Metodo e strumenti</a>
+
+                    <a href="./#books" data-nav-key="nav.books">Libri e blog</a>
+
+                    <a href="./cv_rosario.html" aria-current="page" data-nav-key="nav.cv">Curriculum</a>
+                    <a href="./#contact" data-nav-key="nav.contact">Contatti</a>
+                </nav>
+                <div class="lang-switch">
+                    <button class="lang-btn active" data-lang="it">IT</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header><div class="mobile-menu" id="mobile-menu">
+        <nav class="mobile-nav">
+            <a href="./#home" data-nav-key="nav.home">Home</a>
+            <a href="./#about" data-nav-key="nav.about">Chi sono</a>
+            <a href="./#lights-out" data-nav-key="nav.lightsout">Metodo e strumenti</a>
+
+            <a href="./#books" data-nav-key="nav.books">Libri e blog</a>
+
+            <a href="./cv_rosario.html" aria-current="page" data-nav-key="nav.cv">Curriculum</a>
+            <a href="./#contact" data-nav-key="nav.contact">Contatti</a>
+        </nav>
+        <div class="mobile-lang">
+            <button class="lang-btn active" data-lang="it">IT</button>
+            <span>|</span>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+    </div>
 <main class="page">
 
-  <div class="page-top">
-    <a href="index.html" class="back-link" data-i18n="back">← torna alla home</a>
-    <div class="lang-switch" role="group" aria-label="Seleziona lingua">
-      <button class="lang-btn active" type="button" data-lang="it" aria-pressed="true">IT</button>
-      <span class="lang-divider" aria-hidden="true">|</span>
-      <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
-    </div>
-  </div>
+
 
   <!-- HEADER -->
   <header class="header">
     <div class="header-left">
-      <div class="prompt" data-i18n="prompt">// curriculum_vitae.json — aggiornato a maggio 2026</div>
+
       <h1>Rosario <span>Moscato</span><span class="cursor"></span></h1>
       <div class="title-line">
         <span data-i18n="headline">Chief AI Officer | Eticista dell'IA | Speaker TEDx | Autore</span>
-        <br><a class="tedx-link" href="https://www.youtube.com/watch?v=2T8aoCWZ4CE" target="_blank" rel="noopener noreferrer" data-i18n="tedx_link">Guarda il mio talk TEDxNTUA ↗</a>
+
       </div>
     </div>
-    <address class="contact-grid">
-      <div class="contact-item"><div class="dot"></div><span data-i18n="location">Napoli, Italia — 9 gen 1972</span></div>
-      <div class="contact-item"><div class="dot"></div><a href="mailto:ros.moscato@gmail.com">ros.moscato@gmail.com</a></div>
-      <div class="contact-item"><div class="dot"></div><a href="https://blog.rosmoscato.xyz/" target="_blank" rel="noopener noreferrer">blog.rosmoscato.xyz</a></div>
-      <div class="contact-item"><div class="dot"></div><a href="https://linkedin.com/in/rosariomoscato" target="_blank" rel="noopener noreferrer">linkedin.com/in/rosariomoscato</a></div>
-      <div class="contact-item"><div class="dot"></div><a href="https://github.com/rosariomoscato" target="_blank" rel="noopener noreferrer">github.com/rosariomoscato</a></div>
-    </address>
+
   </header>
 
   <!-- SKILLS -->
@@ -449,7 +147,7 @@ h2.section-label {
 
     <div class="entry">
       <div class="entry-meta">
-        <div class="date-range">May 2026<br>— <span class="present">present</span></div>
+        <div class="date-range">May 2026 — <span class="present">present</span></div>
         <div class="org">Roma</div>
       </div>
       <div>
@@ -460,7 +158,7 @@ h2.section-label {
 
     <div class="entry">
       <div class="entry-meta">
-        <div class="date-range">Apr 2026<br>— <span class="present">present</span></div>
+        <div class="date-range">Apr 2026 — <span class="present">present</span></div>
         <div class="org">Roma</div>
       </div>
       <div>
@@ -471,7 +169,7 @@ h2.section-label {
 
     <div class="entry">
       <div class="entry-meta">
-        <div class="date-range">Nov 2024<br>— <span class="present">present</span></div>
+        <div class="date-range">Nov 2024 — <span class="present">present</span></div>
         <div class="org">Roma</div>
       </div>
       <div>
@@ -482,18 +180,7 @@ h2.section-label {
 
     <div class="entry">
       <div class="entry-meta">
-        <div class="date-range">Sep 2023<br>— <span class="present">present</span></div>
-        <div class="org">Roma</div>
-      </div>
-      <div>
-        <div class="entry-title">Coordinator — Neurobioethics & AI</div>
-        <div class="entry-sub">Neurobioethics Group · Ateneo Pontificio Regina Apostolorum</div>
-      </div>
-    </div>
-
-    <div class="entry">
-      <div class="entry-meta">
-        <div class="date-range">Jun 2024<br>— <span class="present">present</span></div>
+        <div class="date-range">Jun 2024 — <span class="present">present</span></div>
         <div class="org">Roma</div>
       </div>
       <div>
@@ -504,7 +191,18 @@ h2.section-label {
 
     <div class="entry">
       <div class="entry-meta">
-        <div class="date-range">Jan 2023<br>— Jun 2026</div>
+        <div class="date-range">Sep 2023 — <span class="present">present</span></div>
+        <div class="org">Roma</div>
+      </div>
+      <div>
+        <div class="entry-title">Coordinator — Neurobioethics & AI</div>
+        <div class="entry-sub">Neurobioethics Group · Ateneo Pontificio Regina Apostolorum</div>
+      </div>
+    </div>
+
+    <div class="entry">
+      <div class="entry-meta">
+        <div class="date-range">Jan 2023 — Jun 2026</div>
         <div class="org">Roma</div>
       </div>
       <div>
@@ -515,7 +213,7 @@ h2.section-label {
 
     <div class="entry">
       <div class="entry-meta">
-        <div class="date-range">Mar 2022<br>— Dec 2022</div>
+        <div class="date-range">Mar 2022 — Dec 2022</div>
         <div class="org">Roma</div>
       </div>
       <div>
@@ -526,7 +224,7 @@ h2.section-label {
 
     <div class="entry">
       <div class="entry-meta">
-        <div class="date-range">Feb 2020<br>— Feb 2022</div>
+        <div class="date-range">Feb 2020 — Feb 2022</div>
         <div class="org">Roma</div>
       </div>
       <div>
@@ -537,7 +235,7 @@ h2.section-label {
 
     <div class="entry">
       <div class="entry-meta">
-        <div class="date-range">Jul 2018<br>— Jul 2020</div>
+        <div class="date-range">Jul 2018 — Jul 2020</div>
         <div class="org">Roma</div>
       </div>
       <div>
@@ -548,7 +246,7 @@ h2.section-label {
 
     <div class="entry">
       <div class="entry-meta">
-        <div class="date-range">Jan 2015<br>— Jun 2018</div>
+        <div class="date-range">Jan 2015 — Jun 2018</div>
         <div class="org">Shanghai, China</div>
       </div>
       <div>
@@ -559,7 +257,7 @@ h2.section-label {
 
     <div class="entry">
       <div class="entry-meta">
-        <div class="date-range">Dec 2013<br>— Dec 2014</div>
+        <div class="date-range">Dec 2013 — Dec 2014</div>
         <div class="org">Düsseldorf · Luxembourg</div>
       </div>
       <div>
@@ -570,7 +268,7 @@ h2.section-label {
 
     <div class="entry">
       <div class="entry-meta">
-        <div class="date-range">May 2007<br>— Jun 2013</div>
+        <div class="date-range">May 2007 — Jun 2013</div>
         <div class="org">Roma · Milano</div>
       </div>
       <div>
@@ -581,7 +279,7 @@ h2.section-label {
 
     <div class="entry">
       <div class="entry-meta">
-        <div class="date-range">Jun 2006<br>— Jun 2007</div>
+        <div class="date-range">Jun 2006 — Jun 2007</div>
         <div class="org">Roma</div>
       </div>
       <div>
@@ -592,7 +290,7 @@ h2.section-label {
 
     <div class="entry">
       <div class="entry-meta">
-        <div class="date-range">Jun 2004<br>— Jun 2006</div>
+        <div class="date-range">Jun 2004 — Jun 2006</div>
         <div class="org">Roma</div>
       </div>
       <div>
@@ -603,7 +301,7 @@ h2.section-label {
 
     <div class="entry">
       <div class="entry-meta">
-        <div class="date-range">May 2000<br>— May 2004</div>
+        <div class="date-range">May 2000 — May 2004</div>
         <div class="org">Roma</div>
       </div>
       <div>
@@ -742,123 +440,26 @@ h2.section-label {
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="status-bar"><div class="status-dot"></div> available for consulting & speaking engagements</div>
-    <div>I authorize the processing of personal data per art. 13 d.lgs 30/06/2006 · GDPR 679/16</div>
-  </footer>
+
 
 </main>
-<script>
-(() => {
-  const italian = {
-    back: '← torna alla home',
-    prompt: '// curriculum_vitae.json — aggiornato a maggio 2026',
-    headline: 'Chief AI Officer | Eticista dell\'IA | Speaker TEDx | Autore',
-    tedx_link: 'Guarda il mio talk TEDxNTUA ↗',
-    location: 'Napoli, Italia — 9 gen 1972',
-    core_skills: 'competenze_chiave',
-    work_experience: 'esperienza_professionale',
-    education: 'formazione', languages: 'lingue', publications: 'pubblicazioni',
-    teaching: 'didattica e lezioni',
-    skills: ['Orchestrazione di agenti a lunga esecuzione', 'Agentic Coding', 'Claude Code', 'Open Code', 'Codex', 'Metodologia Lights-Out', 'Machine Learning', 'Deep Learning', 'NLP', 'IA generativa', 'Etica dell\'IA', 'Computer Vision', 'MLOps', 'Vercel', 'Docker / Podman', 'Applicazioni web', 'Iperautomazione', 'PWA', 'No-code'],
-    dates: ['mag 2026<br>— <span class="present">in corso</span>', 'apr 2026<br>— <span class="present">in corso</span>', 'nov 2024<br>— <span class="present">in corso</span>', 'set 2023<br>— <span class="present">in corso</span>', 'giu 2024<br>— <span class="present">in corso</span>', 'gen 2023<br>— giu 2026', 'mar 2022<br>— dic 2022', 'feb 2020<br>— feb 2022', 'lug 2018<br>— lug 2020', 'gen 2015<br>— giu 2018', 'dic 2013<br>— dic 2014', 'mag 2007<br>— giu 2013', 'giu 2006<br>— giu 2007', 'giu 2004<br>— giu 2006', 'mag 2000<br>— mag 2004'],
-    roles: ['Responsabile Innovazione e Sostenibilità', 'Membro del Consiglio', 'Presidente e Chief AI Officer', 'Coordinatore — Neurobioetica e IA', 'Autore della sezione IA', 'CTO / CAIO', 'Senior Data Scientist', 'Senior Technical Account Manager', 'Titolare — Studio Modelli IA e POC', 'Vicepresidente Estero', 'Direttore Europa Meridionale', 'Direttore Dispositivi Mobili', 'Program Manager', 'Responsabile di progetto — Gruppo R&S', 'Analista software e DBA'],
-    degrees: ['Master post-laurea — Scienza e Fede <span class="laude">M.c.L.</span>', 'Diploma in Apologetica <span class="laude">M.c.L.</span>', 'Master post-laurea — Progettazione software Internet', 'Ingegneria Elettronica (Biomedica)'],
-    educationDates: ['ott 2017 – giu 2019', 'ott 2011 – giu 2012', 'mag 2000 – dic 2000', 'ott 1990 – mar 1999'],
-    thesis: 'Tesi: "Impiego di sistemi di videoconferenza in applicazioni di telemedicina"',
-    languageTags: ['Italiano — Madrelingua', 'Inglese — C2'],
-    lectures: ['Modulo tecnico-informatico del corso "Metafisica dell\'Algoritmo"', 'Produzione autonoma di software', '"Neurobioetica e Intelligenza Artificiale", corso "Elementi di Neurobioetica"', 'Elaborazione del linguaggio naturale: modulo pratico', 'Introduzione all\'Intelligenza Artificiale', 'Introduzione all\'elaborazione del linguaggio naturale', 'NLP · Etica dell\'IA · Streamlit · Gradio · PyGame'],
-    lectureWhere: ['Laurea magistrale in Filosofia · Ateneo Pontificio Regina Apostolorum — 2026', 'Master IA e Data Science · Università della Calabria — 2026', 'Ateneo Pontificio Regina Apostolorum — 2026', 'Master IA e Data Science · Università della Calabria — 2025', 'Master in Scienza e Fede — Ateneo Pontificio Regina Apostolorum — dal 2019<br>Corso di Perfezionamento in Neurobioetica — Ateneo Pontificio Regina Apostolorum — dal 2019', 'Università Europea di Roma · Universidad Francisco de Vitoria · Universidad Anáhuac Online — 2020', 'corsi online su Udemy'],
-    availability: 'disponibile per consulenze e interventi come speaker',
-    legal: 'Autorizzo il trattamento dei dati personali ai sensi dell\'art. 13 d.lgs. 30/06/2006 · GDPR 679/16'
-  };
-  const englishOverrides = {
-    back: '← back to home', prompt: '// curriculum_vitae.json — updated May 2026',
-    headline: 'Chief AI Officer | AI Ethicist | TEDx Speaker | Books Author', tedx_link: 'Watch my TEDxNTUA talk ↗', location: 'Napoli, Italy — 9 Jan 1972',
-    core_skills: 'core_skills', work_experience: 'work_experience',
-    skill1: 'Long Running Agents Harnessing', skill6: 'Lights-Out Methodology', skill11: 'AI Ethics', skill16: 'Web Apps'
-  };
-  const english = {
-    skills: ['Long Running Agents Harnessing', 'Agentic Coding', 'Claude Code', 'Open Code', 'Codex', 'Lights-Out Methodology', 'Machine Learning', 'Deep Learning', 'NLP', 'Generative AI', 'AI Ethics', 'Computer Vision', 'MLOps', 'Vercel', 'Docker / Podman', 'Web Apps', 'Hyperautomation', 'PWA', 'No-code'],
-    dates: ['May 2026<br>— <span class="present">present</span>', 'Apr 2026<br>— <span class="present">present</span>', 'Nov 2024<br>— <span class="present">present</span>', 'Sep 2023<br>— <span class="present">present</span>', 'Jun 2024<br>— <span class="present">present</span>', 'Jan 2023<br>— Jun 2026', 'Mar 2022<br>— Dec 2022', 'Feb 2020<br>— Feb 2022', 'Jul 2018<br>— Jul 2020', 'Jan 2015<br>— Jun 2018', 'Dec 2013<br>— Dec 2014', 'May 2007<br>— Jun 2013', 'Jun 2006<br>— Jun 2007', 'Jun 2004<br>— Jun 2006', 'May 2000<br>— May 2004'],
-    roles: ['Head of Innovation & Sustainability', 'Board Member', 'President & Chief AI Officer', 'Coordinator — Neurobioethics & AI', 'AI Section Author', 'CTO / CAIO', 'Senior Data Scientist', 'Senior Technical Account Manager', 'Owner — AI Models & POCs Studio', 'Vice President Overseas', 'South Europe Director', 'Mobile Devices Director', 'Program Manager', 'Project Leader — R&D Group', 'Software Analyst & DBA'],
-    degrees: ['Postgrad. Master — Scienza e Fede <span class="laude">M.c.L.</span>', 'Diploma in Apologetica <span class="laude">M.c.L.</span>', 'Postgrad. Master — Internet Software Design', 'Ingegneria Elettronica (Biomedica)'],
-    educationDates: ['Oct 2017 – Jun 2019', 'Oct 2011 – Jun 2012', 'May 2000 – Dec 2000', 'Oct 1990 – Mar 1999'],
-    languageTags: ['Italian — Native', 'English — C2'],
-    lectures: ['Modulo Tecnico-Informatico corso "Metafisica dell\'Algoritmo"', 'Autonomous Software Manufacturing', '"Neurobioetica e Intelligenza Artificiale" corso "Elementi di Neurobioetica"', 'Natural Language Processing: Modulo Pratico', 'Introduzione all\'Intelligenza Artificiale', 'Introduction to Natural Language Processing', 'NLP · AI Ethics · Streamlit · Gradio · PyGame'],
-    lectureWhere: ['Laurea Magistrale in Filosofia · Ateneo Pontificio Regina Apostolorum — 2026', 'Master AI & Data Science · Università della Calabria — 2026', 'Ateneo Pontificio Regina Apostolorum — 2026', 'Master AI & Data Science · Università della Calabria — 2025', 'Master in Scienza e Fede — Ateneo Pontificio Regina Apostolorum — since 2019<br>Corso di Perfezionamento in Neurobioetica — Ateneo Pontificio Regina Apostolorum — since 2019', 'Università Europea di Roma · Universidad Francisco de Vitoria · Universidad Anáhuac Online — 2020', 'online courses on Udemy']
-  };
-  const text = (selector, key, value, html = false) => {
-    const element = document.querySelector(selector);
-    if (!element) return;
-    element.dataset.i18n = key;
-    element.dataset.en = englishOverrides[key] || (html ? element.innerHTML : element.textContent);
-    element.dataset.it = value;
-    element.dataset.html = html;
-  };
-  const list = (selector, prefix, values, englishValues, html = false) => document.querySelectorAll(selector).forEach((element, index) => {
-    const key = `${prefix}${index}`;
-    element.dataset.i18n = key;
-    element.dataset.en = englishValues[index];
-    element.dataset.it = values[index];
-    element.dataset.html = html;
-  });
 
-  text('.back-link', 'back', italian.back); text('.prompt', 'prompt', italian.prompt);
-  text('.title-line span', 'headline', italian.headline); text('.tedx-link', 'tedx_link', italian.tedx_link); text('.contact-item span', 'location', italian.location);
-  text('.section-label', 'core_skills', italian.core_skills);
-  document.querySelectorAll('.section-label').forEach((element, index) => {
-    const keys = ['core_skills', 'work_experience', 'education', 'languages', 'publications', 'teaching'];
-    const values = [italian.core_skills, italian.work_experience, italian.education, italian.languages, italian.publications, italian.teaching];
-    const key = keys[index]; element.dataset.i18n = key; element.dataset.en = englishOverrides[key] || element.textContent; element.dataset.it = values[index];
-  });
-  list('.skills-grid .skill-tag', 'skill', italian.skills, english.skills);
-  list('.date-range', 'date', italian.dates, english.dates, true); list('.entry-title', 'role', italian.roles, english.roles);
-  list('.edu-degree', 'degree', italian.degrees, english.degrees, true); list('.edu-date:not([style])', 'educationDate', italian.educationDates, english.educationDates);
-  text('.edu-date[style]', 'thesis', italian.thesis);
-  document.querySelectorAll('.edu-item + div .skill-tag').forEach((element, index) => {
-    const key = `language${index}`; element.dataset.i18n = key; element.dataset.en = english.languageTags[index]; element.dataset.it = italian.languageTags[index];
-  });
-  list('.lecture-name', 'lecture', italian.lectures, english.lectures); list('.lecture-where', 'lectureWhere', italian.lectureWhere, english.lectureWhere, true);
-  text('.status-bar', 'availability', `<div class="status-dot"></div> ${italian.availability}`, true);
-  text('.footer > div:last-child', 'legal', italian.legal);
-
-  const metadata = {
-    it: {
-      title: 'Rosario Moscato — Curriculum Vitae | AI Engineer, Autore e Speaker',
-      description: 'Curriculum vitae di Rosario Moscato — AI Engineer, autore, speaker e consulente specializzato in sistemi autonomi, agentic coding, etica AI e neurobioetica.',
-      ogTitle: 'Rosario Moscato — Curriculum Vitae', ogDescription: 'AI Engineer, autore, speaker specializzato in sistemi autonomi, agentic coding, etica AI e neurobioetica.', locale: 'it_IT'
-    },
-    en: {
-      title: 'Rosario Moscato — CV | AI Engineer, Author & Speaker',
-      description: 'Curriculum vitae of Rosario Moscato — AI Engineer, author, speaker and consultant specializing in autonomous systems, agentic coding, AI ethics and neurobioethics.',
-      ogTitle: 'Rosario Moscato — Curriculum Vitae', ogDescription: 'AI Engineer, author and speaker specializing in autonomous systems, agentic coding, AI ethics and neurobioethics.', locale: 'en_US'
-    }
-  };
-  const setMeta = (selector, value) => document.querySelector(selector).setAttribute('content', value);
-  const setLanguage = (lang) => {
-    const selected = lang === 'en' ? 'en' : 'it';
-    document.documentElement.lang = selected;
-    document.querySelectorAll('[data-i18n]').forEach((element) => {
-      const value = element.dataset[selected];
-      if (element.dataset.html === 'true') element.innerHTML = value;
-      else element.textContent = value;
-    });
-    document.querySelectorAll('.lang-btn').forEach((button) => {
-      const active = button.dataset.lang === selected;
-      button.classList.toggle('active', active); button.setAttribute('aria-pressed', String(active));
-    });
-    document.querySelector('.lang-switch').setAttribute('aria-label', selected === 'it' ? 'Seleziona lingua' : 'Select language');
-    const meta = metadata[selected]; document.title = meta.title;
-    setMeta('meta[name="description"]', meta.description); setMeta('meta[property="og:title"]', meta.ogTitle);
-    setMeta('meta[property="og:description"]', meta.ogDescription); setMeta('meta[property="og:locale"]', meta.locale);
-    setMeta('meta[name="twitter:title"]', meta.ogTitle); setMeta('meta[name="twitter:description"]', meta.ogDescription);
-    try { localStorage.setItem('lang', selected); } catch (_) { /* Storage may be unavailable. */ }
-  };
-  let initial = 'it'; try { initial = localStorage.getItem('lang') === 'en' ? 'en' : 'it'; } catch (_) { /* Italian is the fallback. */ }
-  document.querySelectorAll('.lang-btn').forEach((button) => button.addEventListener('click', () => setLanguage(button.dataset.lang)));
-  setLanguage(initial);
-})();
-</script>
+<footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-copy" >© 2026 Rosario Moscato - handcrafted by a human, upgraded by agents.</p>
+            <div class="footer-links"><a href="./privacy.html" data-legal-label="privacy">Privacy e cookie</a><a href="./note-legali.html" data-legal-label="legal">Note legali</a></div><div class="footer-social">
+                <a href="https://github.com/rosariomoscato" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/rosariomoscato/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="https://www.amazon.it/stores/author/B0CSBQQH5S/allbooks?_encoding=UTF8&ref_=aufs_ap_ahdr_dsk_ab" target="_blank" rel="noopener noreferrer" aria-label="Amazon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer><script src="navigation.js"></script>
+<script src="cv_rosario.js"></script>
 </body>
 </html>

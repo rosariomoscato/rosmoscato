@@ -8,11 +8,15 @@ Sito personale di Rosario Moscato — AI Engineer, autore e speaker.
 
 | File | Contenuto |
 |------|-----------|
-| `index.html` | Homepage con hero, bio, lights-out, libri, contatti |
+| `index.html` | Homepage con bio, TEDx, metodo Lights-Out, Cronisto, Droidsembly, libri, blog e contatti |
 | `cronisto.html` | Landing page di presentazione di Cronisto |
 | `cv_rosario.html` | Curriculum vitae |
 | `style.css` | Foglio di stile condiviso |
-| `script.js` | Logica i18n (IT/EN, traduzioni inline), animazioni, menu mobile |
+| `script.js` | Traduzioni IT/EN della home, reveal progressivi e ultimo articolo del blog |
+| `navigation.js` | Menu condiviso, focus da tastiera e indicatore della sezione attiva |
+| `cv_rosario.css`, `cv_rosario.js` | Layout e traduzioni del Curriculum |
+| `privacy.html`, `note-legali.html` | Informativa privacy/cookie e note legali bilingui |
+| `legal.css`, `legal.js` | Stili e traduzioni delle pagine legali |
 | `cronisto.css` | Stili della landing page Cronisto |
 | `cronisto.js` | Interazioni della landing page Cronisto |
 | `assets/` | Immagini e risorse statiche |

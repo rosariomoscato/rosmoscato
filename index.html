@@ -26,8 +26,8 @@
     <link rel="stylesheet" href="assets/fonts/fonts.css">
     <link rel="preload" as="image" href="assets/profile-pic-bw.jpg">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0a0f'/><text x='5' y='23' font-family='monospace' font-size='18' fill='%2300ff88' font-weight='bold'>&gt;_</text></svg>">
-    <script>document.documentElement.classList.add('js');</script>
-    <link rel="stylesheet" href="style.css">
+
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -53,32 +53,25 @@
       }
     }
     </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- ═══════════════════ HEADER ═══════════════════ -->
     <header class="site-header" id="site-header">
         <div class="container header-inner">
-            <div class="header-left">
-                <span class="terminal-prompt">rosario@ai-engine</span>
-                <span class="terminal-cursor" aria-hidden="true">█</span>
-            </div>
-            <div class="header-center">
-                <span class="neural-badge">
-                    <span class="neural-dot"></span>
-                    <span class="neural-text">NEURAL ENGINE: ACTIVE</span>
-                </span>
-            </div>
+
+
             <div class="header-right">
                 <nav class="main-nav" id="main-nav">
-                    <a href="#home" data-i18n="nav.home">Home</a>
-                    <a href="#about" data-i18n="nav.about">Chi sono</a>
-                    <a href="#lights-out" class="nav-cta" data-i18n="nav.lightsout">Lights-Out</a>
-                    <a href="cronisto.html" class="nav-cronisto" data-i18n="nav.cronisto">Cronisto</a>
-                    <a href="#books" data-i18n="nav.books">Libri</a>
-                    <a href="https://blog.rosmoscato.xyz/" target="_blank" rel="noopener noreferrer" id="blog-link" data-i18n="nav.blog">Blog</a>
-                    <a href="cv_rosario.html" data-i18n="nav.cv">Curriculum</a>
-                    <a href="#contact" data-i18n="nav.contact">Contatti</a>
+                    <a href="./#home" data-i18n="nav.home">Home</a>
+                    <a href="./#about" data-i18n="nav.about">Chi sono</a>
+                    <a href="./#lights-out" data-i18n="nav.lightsout">Metodo e strumenti</a>
+
+                    <a href="./#books" data-i18n="nav.books">Libri e blog</a>
+
+                    <a href="./cv_rosario.html" data-i18n="nav.cv">Curriculum</a>
+                    <a href="./#contact" data-i18n="nav.contact">Contatti</a>
                 </nav>
                 <div class="lang-switch">
                     <button class="lang-btn active" data-lang="it">IT</button>
@@ -97,14 +90,14 @@
     <!-- ═══════════════════ MOBILE MENU ═══════════════════ -->
     <div class="mobile-menu" id="mobile-menu">
         <nav class="mobile-nav">
-            <a href="#home" data-i18n="nav.home">Home</a>
-            <a href="#about" data-i18n="nav.about">Chi sono</a>
-            <a href="#lights-out" data-i18n="nav.lightsout">Lights-Out</a>
-            <a href="cronisto.html" class="nav-cronisto" data-i18n="nav.cronisto">Cronisto</a>
-            <a href="#books" data-i18n="nav.books">Libri</a>
-            <a href="https://blog.rosmoscato.xyz/" target="_blank" rel="noopener noreferrer" data-i18n="nav.blog">Blog</a>
-            <a href="cv_rosario.html" data-i18n="nav.cv">Curriculum</a>
-            <a href="#contact" data-i18n="nav.contact">Contatti</a>
+            <a href="./#home" data-i18n="nav.home">Home</a>
+            <a href="./#about" data-i18n="nav.about">Chi sono</a>
+            <a href="./#lights-out" data-i18n="nav.lightsout">Metodo e strumenti</a>
+
+            <a href="./#books" data-i18n="nav.books">Libri e blog</a>
+
+            <a href="./cv_rosario.html" data-i18n="nav.cv">Curriculum</a>
+            <a href="./#contact" data-i18n="nav.contact">Contatti</a>
         </nav>
         <div class="mobile-lang">
             <button class="lang-btn active" data-lang="it">IT</button>
@@ -118,31 +111,16 @@
         <section id="home" class="hero">
             <div class="container hero-content">
                 <div class="hero-text">
-                    <span class="blog-chip" id="blog-chip">
-                        <span class="blog-chip-dot" aria-hidden="true"></span>
-                        <span class="blog-chip-label" data-i18n="blog.label">DAL BLOG</span>
-                        <a class="blog-chip-title" id="blog-chip-link" href="https://blog.rosmoscato.xyz/la-fabbrica-al-buio-del-software/" target="_blank" rel="noopener noreferrer">La &quot;Fabbrica al Buio&quot; del Software</a>
-                        <a class="blog-chip-more" href="https://blog.rosmoscato.xyz/" target="_blank" rel="noopener noreferrer" data-i18n="blog.more">Blog →</a>
-                    </span>
-                    <span class="section-prompt" data-i18n="hero.prompt">&gt; chi è Rosario Moscato?</span>
+
+
                     <h1 class="hero-name glitch-hover" data-i18n="hero.name">Rosario Moscato</h1>
                     <p class="hero-role" data-i18n="hero.role">AI Engineer &amp; Divulgatore</p>
                     <p class="hero-tagline">
                         <span id="typing-text">Costruisco agenti AI che pensano, pianificano e sviluppano in autonomia.</span><span class="typing-cursor" aria-hidden="true">█</span>
                     </p>
-                    <span class="hero-location" data-i18n="hero.location">// Italia</span>
-                    <div class="hero-social">
-                        <a href="https://github.com/rosariomoscato" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/rosariomoscato/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                        </a>
-                        <a href="https://www.amazon.it/stores/author/B0CSBQQH5S/allbooks?_encoding=UTF8&ref_=aufs_ap_ahdr_dsk_ab" target="_blank" rel="noopener noreferrer" aria-label="Amazon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                        </a>
-                    </div>
-                    <a href="https://calendar.google.com/calendar/u/0/appointments/AcZssZ2mV1d0v-FT5lH8FSASCBYvEZnAc9ECuHUd5sQ=?gv=true" target="_blank" rel="noopener noreferrer" class="hero-cta" data-i18n="hero.cta">Prenota una consulenza gratuita →</a>
+
+
+                    <a href="./#contact" class="hero-cta" data-i18n="hero.cta">Parliamo del tuo progetto →</a>
                 </div>
                 <div class="hero-photo">
                     <div class="photo-frame">
@@ -153,10 +131,10 @@
         </section>
 
         <!-- ═══════════════════ BIO ═══════════════════ -->
-        <section id="about" class="section bio reveal">
+        <div class="container profile-grid"><section id="about" class="section bio reveal">
             <div class="container">
                 <span class="section-prompt" data-i18n="bio.prompt">&gt; about</span>
-                <h2 class="sr-only">About</h2>
+                <h2 class="profile-heading">Tecnologia, persone e responsabilità.</h2>
                 <div class="bio-content">
                     <p data-i18n-html="bio.p1">AI Engineer specializzato in <span class="highlight">sistemi autonomi</span> e <span class="highlight">agentic coding</span>. Costruisco agenti AI che vanno oltre il chat — sistemi che pianificano task multi-step, utilizzano strumenti, eseguono codice e si correggono autonomamente quando qualcosa va storto.</p>
                     <p data-i18n-html="bio.p2">Il mio lavoro spazia da architetture agentiche in produzione agli strumenti open source che aiutano altri sviluppatori a costruirle più velocemente. Ho sviluppato framework per agentic coding, pipeline di automazione e workflow di sviluppo autonomo.</p>
@@ -186,29 +164,50 @@
         </section>
 
         <!-- ═══════════════════ LIGHTS-OUT ═══════════════════ -->
-        <section id="lights-out" class="section lightsout reveal">
-            <div class="container">
-                <span class="section-prompt" data-i18n="lightsout.prompt">&gt; lights-out</span>
-                <div class="lightsout-card">
-                    <h2 class="lightsout-title"><span class="lightsout-name">LIGHTS-OUT</span> <span data-i18n="lightsout.title">la Fabbrica del Software</span></h2>
-                    <p class="lightsout-desc" data-i18n="lightsout.desc">La “fabbrica al buio” del software: agenti AI cooperanti che progettano, revisionano e rilasciano applicazioni complete in autonomia. L'intervento umano si riduce a una conversazione.</p>
-                    <ul class="lightsout-benefits">
-                        <li data-i18n="lightsout.b1">Start — progettazione intelligente da conversazione in linguaggio naturale</li>
-                        <li data-i18n="lightsout.b2">Review — controllo qualità e sicurezza secondo OWASP Top 10</li>
-                        <li data-i18n="lightsout.b3">Deploy — rilascio automatico su cloud con migrazione dati e CI/CD</li>
-                        <li data-i18n="lightsout.b4">Server MCP nativo: applicazioni pronte a interagire con altre AI</li>
-                        <li data-i18n-html="lightsout.b5">Lavora in perfetta simbiosi con <a href="https://www.cronisto.com/" target="_blank" rel="noopener noreferrer">Cronisto</a></li>
-                    </ul>
-                    <a href="https://blog.rosmoscato.xyz/la-fabbrica-al-buio-del-software/" class="cta-button" data-i18n="lightsout.cta" target="_blank" rel="noopener noreferrer">Per INFO sul PROCESSO CONTATTAMI o LEGGI L'ARTICOLO →</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ═══════════════════ BOOKS ═══════════════════ -->
+</div>
+<section id="lights-out" class="section factory-section">
+ <div class="container">
+  <span class="section-prompt">&gt; metodo e strumenti</span>
+  <div class="method-intro">
+   <div>
+    <h2><span>LIGHTS-OUT</span><br>la Fabbrica del Software</h2>
+    <p>Il metodo per progettare, verificare e rilasciare software con agenti AI cooperanti. Dalla conversazione al software, con la regia umana.</p>
+   </div>
+   <div>
+    <div class="method-flow" aria-label="Le tre fasi del metodo"><span><b>01 / PROGETTA</b>Start</span><i aria-hidden="true">→</i><span><b>02 / VERIFICA</b>Review</span><i aria-hidden="true">→</i><span><b>03 / RILASCIA</b>Deploy</span></div>
+    <a class="method-link" href="https://blog.rosmoscato.xyz/la-fabbrica-al-buio-del-software/" target="_blank" rel="noopener noreferrer">Approfondisci il metodo ↗</a>
+   </div>
+  </div>
+  <div class="product-pair">
+   <article class="product-card cronisto" id="cronisto">
+    <div class="product-copy">
+     <span class="product-role">PROJECT MANAGEMENT</span>
+     <h3 class="product-brand"><img src="assets/cronisto-logo.svg" alt=""><span>Cronisto</span></h3>
+     <p class="product-tagline">Definisci cosa costruire.</p>
+     <p class="product-description">Dal brief alla specifica approvata: requisiti, Gantt, task, risorse umane o AI e costi. Documenti di offerta e prompt per qualunque agente intelligente.</p>
+    </div>
+    <a class="product-screen" href="https://cronisto.com/" target="_blank" rel="noopener noreferrer" aria-label="Scopri Cronisto"><img src="assets/cronisto-gantt.png" alt="Cronisto: task, piano temporale, confronto dei costi e documenti del progetto"></a>
+    <p class="product-caption">Task, piano e costi · Esempio di progetto</p>
+    <div class="product-actions"><a class="product-button" href="https://cronisto.com/" target="_blank" rel="noopener noreferrer">Scopri Cronisto ↗</a></div>
+   </article>
+   <article class="product-card droidsembly" id="droidsembly">
+    <div class="product-copy">
+     <span class="product-role">IMPLEMENTAZIONE SOFTWARE</span>
+     <h3 class="product-brand"><img src="assets/droidsembly-icon.png" alt=""><span>Droid<span class="brand-sembly">sembly</span></span></h3>
+     <p class="product-tagline">Trasforma il piano in software.</p>
+     <p class="product-description">Una fabbrica virtuale che produce software reale. Coordina agenti di coding, segui attività e revisioni e scegli quanto automatizzare, sotto la tua regia.</p>
+    </div>
+    <a class="product-screen" href="https://droidsembly.com/" target="_blank" rel="noopener noreferrer" aria-label="Scopri Droidsembly"><img src="assets/droidsembly-cover.jpg" alt="Droidsembly: la tua squadra AI, il tuo software, la tua regia"></a>
+    <p class="product-caption">La software factory visuale · La tua squadra AI</p>
+    <div class="product-actions"><a class="product-button" href="https://droidsembly.com/" target="_blank" rel="noopener noreferrer">Scopri Droidsembly ↗</a></div>
+   </article>
+  </div>
+ </div>
+</section>
         <section id="books" class="section section-surface books reveal">
             <div class="container">
                 <span class="section-prompt" data-i18n="books.prompt">&gt; books</span>
-                <h2 class="sr-only">Books</h2>
+                <div class="books-heading"><h2>Idee da leggere.</h2><p>Intelligenza artificiale, sviluppo e futuri possibili.</p></div>
                 <div class="books-grid">
 
                     <div class="book-card">
@@ -258,13 +257,18 @@
 
                 </div>
             </div>
-        </section>
+        <div class="container blog-row"><span class="blog-chip" id="blog-chip">
+                        <span class="blog-chip-dot" aria-hidden="true"></span>
+                        <span class="blog-chip-label" data-i18n="blog.label">DAL BLOG</span>
+                        <a class="blog-chip-title" id="blog-chip-link" href="https://blog.rosmoscato.xyz/la-fabbrica-al-buio-del-software/" target="_blank" rel="noopener noreferrer">La &quot;Fabbrica al Buio&quot; del Software</a>
+                        <a class="blog-chip-more" href="https://blog.rosmoscato.xyz/" target="_blank" rel="noopener noreferrer" data-i18n="blog.more">Tutti gli articoli →</a>
+                    </span></div></section>
 
         <!-- ═══════════════════ CONTACT ═══════════════════ -->
         <section id="contact" class="section contact reveal">
             <div class="container">
                 <span class="section-prompt" data-i18n="contact.prompt">&gt; contact</span>
-                <h2 class="sr-only">Contact</h2>
+                <div class="contact-heading"><h2>Parliamo del tuo<br>prossimo progetto.</h2><p>Consulenza, formazione o un intervento come speaker: troviamo il punto da cui partire.</p></div>
                 <div class="contact-grid">
                     <div class="contact-row">
                         <span class="contact-label" data-i18n="contact.consultancy_label">consultancy:</span>
@@ -295,7 +299,7 @@
     <footer class="site-footer">
         <div class="container footer-inner">
             <p class="footer-copy" data-i18n="footer.copy">© 2026 Rosario Moscato - handcrafted by a human, upgraded by agents.</p>
-            <div class="footer-social">
+            <div class="footer-links"><a href="./privacy.html" data-legal-label="privacy">Privacy e cookie</a><a href="./note-legali.html" data-legal-label="legal">Note legali</a></div><div class="footer-social">
                 <a href="https://github.com/rosariomoscato" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
                 </a>
@@ -309,6 +313,8 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+
+    <script src="navigation.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

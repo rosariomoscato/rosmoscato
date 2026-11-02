@@ -1,7 +1,4 @@
-(function () {
-    'use strict';
-
-    var translations = {
+window.portfolioTranslations = {
         it: {
             nav: {
                 home: "Home",
@@ -150,187 +147,103 @@
         }
     };
 
-    var currentLang = localStorage.getItem('lang') || 'it';
 
-    function getNestedValue(obj, key) {
-        return key.split('.').reduce(function (o, k) {
-            return o && o[k] !== undefined ? o[k] : null;
-        }, obj);
-    }
+(() => {
+  const translations = window.portfolioTranslations;
+  const find = (data, key) => key.split('.').reduce((value, part) => value && value[part], data);
+  const overrides = {
+    'hero.cta': ['Parliamo del tuo progetto →', 'Let’s talk about your project →'],
+    'nav.lightsout': ['Metodo e strumenti', 'Method & tools'],
+    'nav.books': ['Libri e blog', 'Books & blog'],
+    'blog.more': ['Tutti gli articoli →', 'All articles →']
+  };
+  const custom = [
+    ['#typing-text', 'Building AI agents that think, plan, and ship autonomously.'],
+    ['.profile-heading', 'Technology, people and responsibility.'],
+    ['.factory-section > .container > .section-prompt', '&gt; method &amp; tools'],
+    ['.method-intro h2', '<span>LIGHTS-OUT</span><br>The Software Factory'],
+    ['.method-intro p', 'A method for designing, reviewing and shipping software with cooperating AI agents. From conversation to software, with human oversight.'],
+    ['.method-flow', '<span><b>01 / DESIGN</b>Start</span><i aria-hidden="true">→</i><span><b>02 / VERIFY</b>Review</span><i aria-hidden="true">→</i><span><b>03 / SHIP</b>Deploy</span>'],
+    ['.method-link', 'Explore the method ↗'],
+    ['.cronisto .product-role', 'PROJECT MANAGEMENT'],
+    ['.cronisto .product-tagline', 'Define what to build.'],
+    ['.cronisto .product-description', 'From brief to approved specification: requirements, Gantt charts, tasks, human or AI resources and costs. Proposals and prompts for any intelligent agent.'],
+    ['.cronisto .product-caption', 'Tasks, schedule and costs · Example project'],
+    ['.cronisto .product-button', 'Discover Cronisto ↗'],
+    ['.droidsembly .product-role', 'SOFTWARE IMPLEMENTATION'],
+    ['.droidsembly .product-tagline', 'Turn the plan into software.'],
+    ['.droidsembly .product-description', 'A virtual factory that produces real software. Coordinate coding agents, track tasks and reviews, and choose how much to automate, with you in control.'],
+    ['.droidsembly .product-caption', 'The visual software factory · Your AI team'],
+    ['.droidsembly .product-button', 'Discover Droidsembly ↗'],
+    ['.books-heading h2', 'Ideas to read.'],
+    ['.books-heading p', 'Artificial intelligence, development and possible futures.'],
+    ['.contact-heading h2', 'Let’s talk about your<br>next project.'],
+    ['.contact-heading p', 'Consulting, training or a speaking engagement: let’s find the right starting point.']
+  ].map(([selector, en]) => {
+    const element = document.querySelector(selector);
+    return { element, en, it: element.innerHTML };
+  });
+  const attributes = [
+    ['#mobile-toggle', 'aria-label', 'Apri o chiudi il menu', 'Open or close the menu'],
+    ['.method-flow', 'aria-label', 'Le tre fasi del metodo', 'The three stages of the method'],
+    ['.cronisto .product-screen', 'aria-label', 'Scopri Cronisto', 'Discover Cronisto'],
+    ['.droidsembly .product-screen', 'aria-label', 'Scopri Droidsembly', 'Discover Droidsembly'],
+    ['.cronisto .product-screen img', 'alt', 'Cronisto: task, piano temporale, confronto dei costi e documenti del progetto', 'Cronisto: tasks, schedule, cost comparison and project documents'],
+    ['.droidsembly .product-screen img', 'alt', 'Droidsembly: la tua squadra AI, il tuo software, la tua regia', 'Droidsembly: your AI team, your software, your direction']
+  ];
+  const apply = lang => {
+    const en = lang === 'en';
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i18n], [data-i18n-html]').forEach(element => {
+      const key = element.dataset.i18n || element.dataset.i18nHtml;
+      const value = overrides[key]?.[en ? 1 : 0] ?? find(translations[lang], key);
+      if (value != null) {
+        if (element.hasAttribute('data-i18n-html')) element.innerHTML = value;
+        else element.textContent = value;
+      }
+    });
+    custom.forEach(item => { item.element.innerHTML = en ? item.en : item.it; });
+    attributes.forEach(([selector, name, it, english]) => document.querySelector(selector).setAttribute(name, en ? english : it));
+    document.querySelectorAll('.lang-btn').forEach(button => {
+      const active = button.dataset.lang === lang;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-pressed', String(active));
+    });
+    document.querySelectorAll('[data-legal-label]').forEach(link => {
+      link.textContent = link.dataset.legalLabel === 'privacy' ? (en ? 'Privacy & cookies' : 'Privacy e cookie') : (en ? 'Legal notice' : 'Note legali');
+    });
+    try { localStorage.setItem('lang', lang); } catch (_) { /* Optional storage. */ }
+  };
+  document.querySelectorAll('.lang-btn').forEach(button => button.addEventListener('click', () => apply(button.dataset.lang)));
+  let initial = 'it';
+  try { if (localStorage.getItem('lang') === 'en') initial = 'en'; } catch (_) { /* Italian fallback. */ }
+  apply(initial);
+  fetch(new URL('/blog-latest.json', location.origin), { cache: 'no-cache' })
+    .then(response => response.ok ? response.json() : null)
+    .then(post => {
+      if (!post?.title || !/^https:\/\/blog\.rosmoscato\.xyz\//.test(post.url || '')) return;
+      const link = document.getElementById('blog-chip-link');
+      link.textContent = post.title;
+      link.href = post.url;
+    })
+    .catch(() => { /* Keep the static article as a fallback. */ });
+})();
 
-    function applyTranslations(data) {
-        var elements = document.querySelectorAll('[data-i18n]');
-        elements.forEach(function (el) {
-            var key = el.getAttribute('data-i18n');
-            var value = getNestedValue(data, key);
-            if (value !== null) {
-                el.textContent = value;
-            }
-        });
-
-        var htmlElements = document.querySelectorAll('[data-i18n-html]');
-        htmlElements.forEach(function (el) {
-            var key = el.getAttribute('data-i18n-html');
-            var value = getNestedValue(data, key);
-            if (value !== null) {
-                el.innerHTML = value;
-            }
-        });
-    }
-
-    function loadLanguage(lang) {
-        currentLang = lang;
-        localStorage.setItem('lang', lang);
-        document.documentElement.lang = lang;
-
-        var data = translations[lang];
-        if (data) {
-            applyTranslations(data);
-            startTyping(data.hero.tagline);
-            updateLangButtons();
+// Content stays visible unless reveal observation has been initialised successfully.
+(() => {
+  if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  try {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
         }
-    }
-
-    function updateLangButtons() {
-        var buttons = document.querySelectorAll('.lang-btn');
-        buttons.forEach(function (btn) {
-            btn.classList.toggle('active', btn.getAttribute('data-lang') === currentLang);
-        });
-    }
-
-    function startTyping(text) {
-        var el = document.getElementById('typing-text');
-        if (!el) return;
-        el.textContent = '';
-        var i = 0;
-        var speed = 35;
-
-        function type() {
-            if (i < text.length) {
-                el.textContent += text.charAt(i);
-                i++;
-                setTimeout(type, speed);
-            }
-        }
-
-        setTimeout(type, 800);
-    }
-
-    function initLangSwitcher() {
-        var buttons = document.querySelectorAll('.lang-btn');
-        buttons.forEach(function (btn) {
-            btn.addEventListener('click', function () {
-                var lang = btn.getAttribute('data-lang');
-                if (lang !== currentLang) {
-                    loadLanguage(lang);
-                }
-            });
-        });
-    }
-
-    function initMobileMenu() {
-        var toggle = document.getElementById('mobile-toggle');
-        var menu = document.getElementById('mobile-menu');
-        if (!toggle || !menu) return;
-
-        toggle.addEventListener('click', function () {
-            toggle.classList.toggle('active');
-            menu.classList.toggle('open');
-            document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
-        });
-
-        var links = menu.querySelectorAll('a[href^="#"]');
-        links.forEach(function (link) {
-            link.addEventListener('click', function () {
-                toggle.classList.remove('active');
-                menu.classList.remove('open');
-                document.body.style.overflow = '';
-            });
-        });
-    }
-
-    function initScrollReveal() {
-        var reveals = document.querySelectorAll('.reveal');
-        if (!reveals.length) return;
-
-        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
-            reveals.forEach(function (el) { el.classList.add('revealed'); });
-            return;
-        }
-
-        var observer = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('revealed');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.1,
-            rootMargin: '0px 0px -40px 0px'
-        });
-
-        reveals.forEach(function (el) {
-            observer.observe(el);
-        });
-    }
-
-    function initSmoothScroll() {
-        var anchors = document.querySelectorAll('a[href^="#"]');
-        anchors.forEach(function (anchor) {
-            anchor.addEventListener('click', function (e) {
-                var href = anchor.getAttribute('href');
-                if (href === '#') return;
-                var target = document.querySelector(href);
-                if (target) {
-                    e.preventDefault();
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    }
-
-    function initHeaderScroll() {
-        var header = document.getElementById('site-header');
-
-        window.addEventListener('scroll', function () {
-            var currentScroll = window.pageYOffset;
-            if (currentScroll > 100) {
-                header.style.borderBottomColor = 'var(--border-light)';
-            } else {
-                header.style.borderBottomColor = 'var(--border)';
-            }
-        }, { passive: true });
-    }
-
-    function initBlogChip() {
-        var link = document.getElementById('blog-chip-link');
-        if (!link) return;
-
-        fetch('/blog-latest.json', { cache: 'no-cache' })
-            .then(function (res) { return res.ok ? res.json() : null; })
-            .then(function (data) {
-                if (!data || !data.title || !data.url) return;
-                if (!/^https:\/\/blog\.rosmoscato\.xyz\//.test(data.url)) return;
-                link.textContent = data.title;
-                link.href = data.url;
-            })
-            .catch(function () { /* fallback statico gi\u00e0 nel markup */ });
-    }
-
-    function init() {
-        initLangSwitcher();
-        initMobileMenu();
-        initScrollReveal();
-        initSmoothScroll();
-        initHeaderScroll();
-        initBlogChip();
-        loadLanguage(currentLang);
-    }
-
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-    } else {
-        init();
-    }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+    document.documentElement.classList.add('js');
+  } catch (_) {
+    document.documentElement.classList.remove('js');
+  }
 })();

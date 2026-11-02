@@ -4,14 +4,18 @@
 
 ## Pagine
 
-- [Home](https://rosmoscato.xyz/): Homepage — chi è Rosario Moscato, metodologia Lights-Out, libri e contatti
+- [Home](https://rosmoscato.xyz/): Rosario Moscato, talk TEDxNTUA, metodo Lights-Out, Cronisto, Droidsembly, libri, blog e contatti
 - [Cronisto](https://rosmoscato.xyz/cronisto.html): Presentazione di Cronisto, project management assistito dall'AI dal brief all'esecuzione
 - [Curriculum](https://rosmoscato.xyz/cv_rosario.html): Curriculum vitae — carriera, pubblicazioni e talk
+- [Privacy e cookie](https://rosmoscato.xyz/privacy.html): Informativa su navigazione, contatti, servizi esterni e preferenza lingua
+- [Note legali](https://rosmoscato.xyz/note-legali.html): Titolarità del portfolio, diritti sui contenuti e collegamenti esterni
 
 ## Contenuti
 
 - [Blog — Oltre l'Algoritmo](https://blog.rosmoscato.xyz/): Articoli su AI, agenti autonomi e cultura digitale
 - [La "Fabbrica al Buio" del Software](https://blog.rosmoscato.xyz/la-fabbrica-al-buio-del-software/): La metodologia Lights-Out Software Development (Start → Review → Deploy)
+- [Cronisto](https://cronisto.com/): Project management, requisiti, piano, risorse, costi, documenti e prompt per agenti
+- [Droidsembly](https://droidsembly.com/): Fabbrica visuale per coordinare agenti di coding che implementano software reale
 
 ## Altro
 
